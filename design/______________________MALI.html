@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang="ar" dir="rtl" class="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التقارير والتحليلات — MALI – مالي</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="14546e634a2f4b9a===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'emerald-primary': '#19C37D',
+        'on-emerald-primary': '#002B17',
+        'muted-gold': '#D6B56D',
+        'on-muted-gold': '#2A1E00',
+        'charcoal-bg': '#101318',
+        'card-surface': '#1B2026',
+        'income-green': '#19C37D',
+        'expense-coral': '#F26464',
+        'warning-amber': '#E4C279',
+        'dark-primary': '#48E096',
+        'dark-on-primary': '#003920',
+        'dark-primary-container': '#19C37D',
+        'dark-on-primary-container': '#002915',
+        'dark-secondary': '#E4C279',
+        'dark-on-secondary': '#3F2E00',
+        'dark-secondary-container': '#5D4606',
+        'dark-on-secondary-container': '#FFDF9C',
+        'dark-tertiary': '#FFB5A2',
+        'dark-on-tertiary': '#601402',
+        'dark-tertiary-container': '#FF8B6E',
+        'dark-on-tertiary-container': '#420B00',
+        'dark-error': '#FFB3AF',
+        'dark-on-error': '#68000D',
+        'dark-error-container': '#910518',
+        'dark-on-error-container': '#FFDAD7',
+        'dark-background': '#101318',
+        'dark-on-background': '#E6E8EE',
+        'dark-surface': '#101318',
+        'dark-surface-dim': '#0B0E13',
+        'dark-surface-bright': '#2A3038',
+        'dark-surface-container-lowest': '#0B0E13',
+        'dark-surface-container-low': '#15191F',
+        'dark-surface-container': '#1B2026',
+        'dark-surface-container-high': '#232931',
+        'dark-surface-container-highest': '#2D343E',
+        'dark-on-surface': '#E6E8EE',
+        'dark-surface-variant': '#2D343E',
+        'dark-on-surface-variant': '#9BA3B0',
+        'dark-outline': '#7A828F',
+        'dark-outline-variant': '#2A313B',
+        'dark-inverse-surface': '#E6E8EE',
+        'dark-inverse-on-surface': '#1B2026',
+        'dark-inverse-primary': '#006D43',
+        'dark-shadow': '#000000',
+        'dark-scrim': '#000000',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '12px',
+        'md': '16px',
+        'lg': '20px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '32px',
+        'page-margin': '16px',
+      },
+      fontFamily: {
+        'display': ['"Cairo"', 'sans-serif'],
+        'headline': ['"Cairo"', 'sans-serif'],
+        'title': ['"Cairo"', 'sans-serif'],
+        'body': ['"Tajawal"', 'sans-serif'],
+        'label': ['"Tajawal"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['28px', { lineHeight: '36px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-md': ['22px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '700' }],
+        'title-lg': ['18px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '700' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '700' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '220ms',
+        'surface-exit': '160ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&amp;family=Tajawal:wght@400;500;700&amp;family=Source+Code+Pro:wght@600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-dark-surface text-dark-on-surface font-body antialiased overflow-x-hidden">
+
+  <div class="min-h-screen flex flex-col lg:flex-row">
+    <!-- Desktop RTL Sidebar -->
+    <aside class="hidden lg:flex lg:flex-col lg:w-64 lg:shrink-0 min-h-screen bg-dark-surface-container border-l border-dark-outline-variant p-gutter-lg justify-between sticky top-0">
+      <div class="flex flex-col gap-gutter-xl">
+        <div class="flex items-center gap-gutter-sm">
+          <div class="w-10 h-10 rounded-md bg-emerald-primary text-on-emerald-primary flex items-center justify-center font-headline text-title-lg">م</div>
+          <div>
+            <p class="font-headline text-title-lg text-dark-on-surface" data-design-text-token="title-lg">MALI – مالي</p>
+            <p class="text-label-sm text-dark-on-surface-variant" data-design-text-token="label-sm">إدارة المال الذكية</p>
+          </div>
+        </div>
+        <nav class="flex flex-col gap-gutter-xs" aria-label="التنقل الرئيسي">
+          <a href="../home-dashboard/HomeDashboard.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">home</span>
+            <span data-design-text-token="label-lg">الرئيسية</span>
+          </a>
+          <a href="../wallets/Wallets.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">account_balance_wallet</span>
+            <span data-design-text-token="label-lg">المحافظ</span>
+          </a>
+          <a href="../transactions/Transactions.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">receipt_long</span>
+            <span data-design-text-token="label-lg">العمليات</span>
+          </a>
+          <a href="../reports/Reports.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded bg-dark-surface-container-high text-emerald-primary font-label text-label-lg">
+            <span class="material-symbols-outlined text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;">monitoring</span>
+            <span data-design-text-token="label-lg">التقارير</span>
+          </a>
+          <a href="../more-hub/MoreHub.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">grid_view</span>
+            <span data-design-text-token="label-lg">المزيد</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0 w-full max-w-5xl mx-auto px-page-margin lg:px-gutter-xl pt-gutter-md pb-28 lg:pb-gutter-xl flex flex-col gap-gutter-lg">
+      <header class="flex flex-col gap-gutter-sm">
+        <h1 class="font-headline text-headline-lg text-dark-on-surface" data-design-text-token="headline-lg">التقارير والتحليلات</h1>
+        <!-- Period Selector -->
+        <div class="flex flex-wrap gap-gutter-xs">
+          <button type="button" onclick="setPeriod(&#39;today&#39;)" id="p-today" class="px-gutter-md py-1.5 rounded-full text-label-sm bg-card-surface border border-dark-outline-variant text-dark-on-surface-variant">اليوم</button>
+          <button type="button" onclick="setPeriod(&#39;week&#39;)" id="p-week" class="px-gutter-md py-1.5 rounded-full text-label-sm bg-card-surface border border-dark-outline-variant text-dark-on-surface-variant">هذا الأسبوع</button>
+          <button type="button" onclick="setPeriod(&#39;month&#39;)" id="p-month" class="px-gutter-md py-1.5 rounded-full text-label-sm bg-emerald-primary text-on-emerald-primary">هذا الشهر</button>
+          <button type="button" onclick="setPeriod(&#39;year&#39;)" id="p-year" class="px-gutter-md py-1.5 rounded-full text-label-sm bg-card-surface border border-dark-outline-variant text-dark-on-surface-variant">هذه السنة</button>
+          <button type="button" onclick="setPeriod(&#39;custom&#39;)" id="p-custom" class="px-gutter-md py-1.5 rounded-full text-label-sm bg-card-surface border border-dark-outline-variant text-dark-on-surface-variant">نطاق مخصص</button>
+        </div>
+        <div id="custom-range" class="hidden grid-cols-2 gap-gutter-sm pt-gutter-xs">
+          <input id="r-from" type="date" onchange="renderReports()" class="bg-card-surface border border-dark-outline-variant rounded px-gutter-sm py-2 text-label-sm text-dark-on-surface">
+          <input id="r-to" type="date" onchange="renderReports()" class="bg-card-surface border border-dark-outline-variant rounded px-gutter-sm py-2 text-label-sm text-dark-on-surface">
+        </div>
+      </header>
+
+      <!-- 5 Key Statistics -->
+      <section class="grid grid-cols-2 lg:grid-cols-5 gap-gutter-sm">
+        <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-md flex flex-col gap-gutter-xs">
+          <span class="text-label-sm text-dark-on-surface-variant">إجمالي الدخل</span>
+          <p id="st-income" class="font-headline text-title-md text-income-green tabular-nums" dir="ltr">0 MRU</p>
+        </article>
+        <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-md flex flex-col gap-gutter-xs">
+          <span class="text-label-sm text-dark-on-surface-variant">إجمالي المصروفات</span>
+          <p id="st-expense" class="font-headline text-title-md text-expense-coral tabular-nums" dir="ltr">0 MRU</p>
+        </article>
+        <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-md flex flex-col gap-gutter-xs">
+          <span class="text-label-sm text-dark-on-surface-variant">صافي التدفق</span>
+          <p id="st-net" class="font-headline text-title-md text-dark-on-surface tabular-nums" dir="ltr">0 MRU</p>
+        </article>
+        <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-md flex flex-col gap-gutter-xs">
+          <span class="text-label-sm text-dark-on-surface-variant">متوسط الإنفاق اليومي</span>
+          <p id="st-avg" class="font-headline text-title-md text-muted-gold tabular-nums" dir="ltr">0 MRU</p>
+        </article>
+        <article class="col-span-2 lg:col-span-1 bg-card-surface border border-dark-outline-variant rounded-md p-gutter-md flex flex-col gap-gutter-xs">
+          <span class="text-label-sm text-dark-on-surface-variant">أعلى فئة إنفاق</span>
+          <p id="st-top-cat" class="font-headline text-title-md text-dark-on-surface">—</p>
+        </article>
+      </section>
+
+      <!-- Real Data Insights -->
+      <section class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-lg flex flex-col gap-gutter-sm">
+        <div class="flex items-center gap-gutter-xs">
+          <span class="material-symbols-outlined text-muted-gold text-title-lg" aria-hidden="true">lightbulb</span>
+          <h2 class="font-headline text-title-lg text-dark-on-surface">مؤشرات مالية ذكية</h2>
+        </div>
+        <ul id="insights-list" class="flex flex-col gap-gutter-xs text-body-md text-dark-on-surface-variant"></ul>
+      </section>
+
+      <!-- Charts Grid -->
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-gutter-md">
+        <!-- Expense Categories Donut -->
+        <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-lg flex flex-col gap-gutter-md">
+          <h2 class="font-headline text-title-lg text-dark-on-surface">توزيع المصروفات حسب الفئة</h2>
+          <div class="flex items-center gap-gutter-lg">
+            <svg id="donut-svg" viewBox="0 0 120 120" class="w-32 h-32 shrink-0"></svg>
+            <div id="donut-legend" class="flex-1 flex flex-col gap-gutter-xs text-label-sm"></div>
+          </div>
+        </article>
+
+        <!-- Wallet Balance Comparison -->
+        <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-lg flex flex-col gap-gutter-md">
+          <h2 class="font-headline text-title-lg text-dark-on-surface">مقارنة أرصدة المحافظ</h2>
+          <div id="wallet-compare-bars" class="flex flex-col gap-gutter-sm"></div>
+        </article>
+
+        <!-- Income vs Expenses Line Chart -->
+        <article class="lg:col-span-2 bg-card-surface border border-dark-outline-variant rounded-md p-gutter-lg flex flex-col gap-gutter-md">
+          <h2 class="font-headline text-title-lg text-dark-on-surface">اتجاه الدخل والمصروفات</h2>
+          <svg id="line-svg" viewBox="0 0 600 160" class="w-full h-40 overflow-visible"></svg>
+        </article>
+      </section>
+    </main>
+
+    <!-- Mobile Bottom Navigation + FAB -->
+    <nav aria-label="التنقل السفلي" class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-card-surface border-t border-dark-outline-variant px-gutter-sm py-gutter-xs">
+      <div class="max-w-md mx-auto grid grid-cols-5 items-center relative">
+        <a href="../home-dashboard/HomeDashboard.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">home</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">الرئيسية</span>
+        </a>
+        <a href="../wallets/Wallets.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">account_balance_wallet</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">المحافظ</span>
+        </a>
+        <div class="flex items-center justify-center">
+          <a href="../home-dashboard/HomeDashboard.html" aria-label="إضافة عملية" class="-mt-7 w-14 h-14 rounded-full bg-emerald-primary text-on-emerald-primary flex items-center justify-center border-4 border-dark-surface hover:bg-dark-primary">
+            <span class="material-symbols-outlined text-headline-lg">add</span>
+          </a>
+        </div>
+        <a href="../transactions/Transactions.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">receipt_long</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">العمليات</span>
+        </a>
+        <a href="../more-hub/MoreHub.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-emerald-primary">
+          <span class="material-symbols-outlined text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;">grid_view</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">المزيد</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <script>
+    const DB_KEY = 'mali_finance_db_v1';
+    let memFallback = null;
+    function loadDB() {
+      try { const r = localStorage.getItem(DB_KEY); if (r) return JSON.parse(r); } catch (e) {}
+      if (!memFallback) memFallback = {
+        primaryCurrency: 'MRU',
+        wallets: [
+          { id: 'w_cash', name: 'النقدي', balance: 120000, currency: 'MRU', archived: false },
+          { id: 'w_bmci', name: 'BMCI', balance: 350000, currency: 'MRU', archived: false },
+          { id: 'w_bp', name: 'البنك الشعبي', balance: 80000, currency: 'MRU', archived: false }
+        ],
+        categories: [
+          { id: 'c_food', name: 'طعام ومطاعم', type: 'expense' },
+          { id: 'c_bills', name: 'فواتير', type: 'expense' },
+          { id: 'c_trans', name: 'نقل ومواصلات', type: 'expense' },
+          { id: 'c_salary', name: 'راتب', type: 'income' }
+        ],
+        transactions: [
+          { id: 't_1', type: 'income', amount: 280000, walletId: 'w_bmci', categoryId: 'c_salary', date: '2026-11-20', currency: 'MRU' },
+          { id: 't_2', type: 'expense', amount: 14500, walletId: 'w_cash', categoryId: 'c_food', date: '2026-11-20', currency: 'MRU' },
+          { id: 't_4', type: 'expense', amount: 8500, walletId: 'w_bp', categoryId: 'c_bills', date: '2026-11-18', currency: 'MRU' },
+          { id: 't_5', type: 'expense', amount: 6200, walletId: 'w_cash', categoryId: 'c_trans', date: '2026-11-17', currency: 'MRU' }
+        ]
+      };
+      return memFallback;
+    }
+
+    let period = 'month';
+    function fmt(a, c = 'MRU') { return (Math.round(Number(a) * 100) / 100).toLocaleString('en-US', { maximumFractionDigits: 2 }) + ' ' + c; }
+
+    function setPeriod(p) {
+      period = p;
+      ['today', 'week', 'month', 'year', 'custom'].forEach(k => {
+        document.getElementById('p-' + k).className = 'px-gutter-md py-1.5 rounded-full text-label-sm ' + (k === p ? 'bg-emerald-primary text-on-emerald-primary' : 'bg-card-surface border border-dark-outline-variant text-dark-on-surface-variant');
+      });
+      document.getElementById('custom-range').classList.toggle('hidden', p !== 'custom');
+      document.getElementById('custom-range').classList.toggle('grid', p === 'custom');
+      renderReports();
+    }
+
+    function renderReports() {
+      const db = loadDB();
+      const now = new Date();
+      const todayStr = now.toISOString().split('T')[0];
+
+      const txs = db.transactions.filter(t => {
+        if (t.type === 'transfer') return false;
+        if (period === 'today') return t.date === todayStr;
+        if (period === 'week') { const d = new Date(t.date); return (now - d) / 86400000 <= 7; }
+        if (period === 'month') return t.date.startsWith(todayStr.slice(0, 7));
+        if (period === 'year') return t.date.startsWith(todayStr.slice(0, 4));
+        if (period === 'custom') {
+          const f = document.getElementById('r-from').value, to = document.getElementById('r-to').value;
+          if (f && t.date < f) return false;
+          if (to && t.date > to) return false;
+        }
+        return true;
+      });
+
+      const inc = txs.filter(t => t.type === 'income').reduce((s, t) => s + Number(t.amount), 0);
+      const exp = txs.filter(t => t.type === 'expense').reduce((s, t) => s + Number(t.amount), 0);
+      const net = inc - exp;
+      const days = period === 'today' ? 1 : (period === 'week' ? 7 : (period === 'month' ? 30 : 365));
+      const avg = exp / days;
+
+      const byCat = {};
+      txs.filter(t => t.type === 'expense').forEach(t => {
+        const c = db.categories.find(x => x.id === t.categoryId);
+        const name = c ? c.name : 'أخرى';
+        byCat[name] = (byCat[name] || 0) + Number(t.amount);
+      });
+      const catEntries = Object.entries(byCat).sort((a, b) => b[1] - a[1]);
+      const topCat = catEntries.length ? catEntries[0][0] : '—';
+
+      document.getElementById('st-income').textContent = fmt(inc);
+      document.getElementById('st-expense').textContent = fmt(exp);
+      document.getElementById('st-net').textContent = fmt(net);
+      document.getElementById('st-avg').textContent = fmt(avg);
+      document.getElementById('st-top-cat').textContent = topCat;
+
+      // Real Insights
+      const insights = [];
+      if (catEntries.length) {
+        const pct = exp > 0 ? Math.round((catEntries[0][1] / exp) * 100) : 0;
+        insights.push(`أعلى فئة إنفاق لديك هي "${catEntries[0][0]}" بنسبة ${pct}% من إجمالي المصروفات.`);
+      }
+      if (inc > exp) {
+        const savePct = inc > 0 ? Math.round(((inc - exp) / inc) * 100) : 0;
+        insights.push(`معدل الادخار الصافي في هذه الفترة يبلغ ${savePct}% (${fmt(net)}).`);
+      } else if (exp > inc && exp > 0) {
+        insights.push(`تنبيه: المصروفات تتجاوز الدخل بمقدار ${fmt(exp - inc)} خلال هذه الفترة.`);
+      }
+      if (!insights.length) insights.push('أضف معاملات دخل ومصروفات لعرض مؤشرات مالية دقيقة مبنية على بياناتك.');
+      document.getElementById('insights-list').innerHTML = insights.map(i => `<li class="flex items-start gap-2"><span class="text-emerald-primary">•</span><span>${i}</span></li>`).join('');
+
+      // Donut Chart
+      const palette = ['#19C37D', '#D6B56D', '#F26464', '#48E096', '#9BA3B0'];
+      const r = 45, circ = 2 * Math.PI * r;
+      let offset = 0;
+      const svg = document.getElementById('donut-svg');
+      const legend = document.getElementById('donut-legend');
+      if (exp === 0) {
+        svg.innerHTML = `<circle cx="60" cy="60" r="${r}" fill="none" stroke="#2A313B" stroke-width="14"/>`;
+        legend.innerHTML = `<span class="text-dark-on-surface-variant">لا توجد مصروفات في هذه الفترة</span>`;
+      } else {
+        svg.innerHTML = catEntries.slice(0, 5).map(([name, val], idx) => {
+          const dash = (val / exp) * circ;
+          const seg = `<circle cx="60" cy="60" r="${r}" fill="none" stroke="${palette[idx % palette.length]}" stroke-width="14" stroke-dasharray="${dash} ${circ - dash}" stroke-dashoffset="${-offset}" transform="rotate(-90 60 60)"/>`;
+          offset += dash;
+          return seg;
+        }).join('');
+        legend.innerHTML = catEntries.slice(0, 5).map(([name, val], idx) => `
+          <div class="flex items-center justify-between gap-2">
+            <span class="inline-flex items-center gap-1.5"><span style="background:${palette[idx % palette.length]}" class="w-2.5 h-2.5 rounded-full"></span><span>${name}</span></span>
+            <span class="tabular-nums text-dark-on-surface" dir="ltr">${Math.round((val / exp) * 100)}%</span>
+          </div>
+        `).join('');
+      }
+
+      // Wallet comparison
+      const activeW = db.wallets.filter(w => !w.archived);
+      const maxW = Math.max(...activeW.map(w => Number(w.balance)), 1);
+      document.getElementById('wallet-compare-bars').innerHTML = activeW.map(w => {
+        const pct = Math.max(4, Math.round((Number(w.balance) / maxW) * 100));
+        return `
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between text-label-sm">
+              <span class="text-dark-on-surface">${w.name}</span>
+              <span class="tabular-nums text-dark-on-surface-variant" dir="ltr">${fmt(w.balance, w.currency)}</span>
+            </div>
+            <div class="w-full h-2.5 rounded-full bg-dark-surface-container-low overflow-hidden">
+              <div style="width:${pct}%" class="h-full rounded-full bg-emerald-primary"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // Line chart
+      document.getElementById('line-svg').innerHTML = `
+        <line x1="0" y1="140" x2="600" y2="140" stroke="#2A313B" stroke-width="1"/>
+        <polyline fill="none" stroke="#19C37D" stroke-width="3" points="20,110 140,85 260,95 380,45 500,60 580,30"/>
+        <polyline fill="none" stroke="#F26464" stroke-width="3" points="20,125 140,110 260,120 380,95 500,105 580,88"/>
+      `;
+    }
+
+    renderReports();
+  </script>
+
+
+</body></html>

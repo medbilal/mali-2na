@@ -1,0 +1,6 @@
+{
+  "name": "MALI – مالي",
+  "description": "تطبيق شخصي متكامل لإدارة الأموال والمحافظ المتعددة، تتبع الدخل والمصروفات، التحويلات الداخلية، الميزانيات، الديون، والتقارير المالية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,558 @@
+<!DOCTYPE html><html lang="ar" dir="rtl" class="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحافظ — MALI – مالي</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="14546e634a2f4b9a===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'emerald-primary': '#19C37D',
+        'on-emerald-primary': '#002B17',
+        'muted-gold': '#D6B56D',
+        'on-muted-gold': '#2A1E00',
+        'charcoal-bg': '#101318',
+        'card-surface': '#1B2026',
+        'income-green': '#19C37D',
+        'expense-coral': '#F26464',
+        'warning-amber': '#E4C279',
+        'dark-primary': '#48E096',
+        'dark-on-primary': '#003920',
+        'dark-primary-container': '#19C37D',
+        'dark-on-primary-container': '#002915',
+        'dark-secondary': '#E4C279',
+        'dark-on-secondary': '#3F2E00',
+        'dark-secondary-container': '#5D4606',
+        'dark-on-secondary-container': '#FFDF9C',
+        'dark-tertiary': '#FFB5A2',
+        'dark-on-tertiary': '#601402',
+        'dark-tertiary-container': '#FF8B6E',
+        'dark-on-tertiary-container': '#420B00',
+        'dark-error': '#FFB3AF',
+        'dark-on-error': '#68000D',
+        'dark-error-container': '#910518',
+        'dark-on-error-container': '#FFDAD7',
+        'dark-background': '#101318',
+        'dark-on-background': '#E6E8EE',
+        'dark-surface': '#101318',
+        'dark-surface-dim': '#0B0E13',
+        'dark-surface-bright': '#2A3038',
+        'dark-surface-container-lowest': '#0B0E13',
+        'dark-surface-container-low': '#15191F',
+        'dark-surface-container': '#1B2026',
+        'dark-surface-container-high': '#232931',
+        'dark-surface-container-highest': '#2D343E',
+        'dark-on-surface': '#E6E8EE',
+        'dark-surface-variant': '#2D343E',
+        'dark-on-surface-variant': '#9BA3B0',
+        'dark-outline': '#7A828F',
+        'dark-outline-variant': '#2A313B',
+        'dark-inverse-surface': '#E6E8EE',
+        'dark-inverse-on-surface': '#1B2026',
+        'dark-inverse-primary': '#006D43',
+        'dark-shadow': '#000000',
+        'dark-scrim': '#000000',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '12px',
+        'md': '16px',
+        'lg': '20px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '32px',
+        'page-margin': '16px',
+      },
+      fontFamily: {
+        'display': ['"Cairo"', 'sans-serif'],
+        'headline': ['"Cairo"', 'sans-serif'],
+        'title': ['"Cairo"', 'sans-serif'],
+        'body': ['"Tajawal"', 'sans-serif'],
+        'label': ['"Tajawal"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['28px', { lineHeight: '36px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-md': ['22px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '700' }],
+        'title-lg': ['18px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '700' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '700' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '220ms',
+        'surface-exit': '160ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&amp;family=Tajawal:wght@400;500;700&amp;family=Source+Code+Pro:wght@600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-dark-surface text-dark-on-surface font-body antialiased overflow-x-hidden">
+
+  <div class="min-h-screen flex flex-col lg:flex-row">
+    <!-- Desktop RTL Sidebar -->
+    <aside class="hidden lg:flex lg:flex-col lg:w-64 lg:shrink-0 min-h-screen bg-dark-surface-container border-l border-dark-outline-variant p-gutter-lg justify-between sticky top-0">
+      <div class="flex flex-col gap-gutter-xl">
+        <div class="flex items-center gap-gutter-sm">
+          <div class="w-10 h-10 rounded-md bg-emerald-primary text-on-emerald-primary flex items-center justify-center font-headline text-title-lg">م</div>
+          <div>
+            <p class="font-headline text-title-lg text-dark-on-surface" data-design-text-token="title-lg">MALI – مالي</p>
+            <p class="text-label-sm text-dark-on-surface-variant" data-design-text-token="label-sm">إدارة المال الذكية</p>
+          </div>
+        </div>
+
+        <nav class="flex flex-col gap-gutter-xs" aria-label="التنقل الرئيسي">
+          <a href="../home-dashboard/HomeDashboard.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">home</span>
+            <span data-design-text-token="label-lg">الرئيسية</span>
+          </a>
+          <a href="../wallets/Wallets.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded bg-dark-surface-container-high text-emerald-primary font-label text-label-lg">
+            <span class="material-symbols-outlined text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;">account_balance_wallet</span>
+            <span data-design-text-token="label-lg">المحافظ</span>
+          </a>
+          <a href="../transactions/Transactions.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">receipt_long</span>
+            <span data-design-text-token="label-lg">العمليات</span>
+          </a>
+          <a href="../reports/Reports.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">monitoring</span>
+            <span data-design-text-token="label-lg">التقارير</span>
+          </a>
+          <a href="../more-hub/MoreHub.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">grid_view</span>
+            <span data-design-text-token="label-lg">المزيد</span>
+          </a>
+        </nav>
+      </div>
+      <button type="button" onclick="openWalletForm()" class="w-full inline-flex items-center justify-center gap-gutter-sm bg-emerald-primary text-on-emerald-primary font-label text-label-lg px-gutter-lg py-3 rounded-full hover:bg-dark-primary transition-colors duration-state-change">
+        <span class="material-symbols-outlined text-title-lg" aria-hidden="true">add</span>
+        <span data-design-text-token="label-lg">إضافة محفظة</span>
+      </button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0 w-full max-w-5xl mx-auto px-page-margin lg:px-gutter-xl pt-gutter-md pb-28 lg:pb-gutter-xl flex flex-col gap-gutter-lg">
+
+      <!-- List View -->
+      <div id="wallets-list-view" class="flex flex-col gap-gutter-lg">
+        <header class="flex items-center justify-between gap-gutter-sm">
+          <div class="min-w-0">
+            <h1 class="font-headline text-headline-lg text-dark-on-surface" data-design-text-token="headline-lg">المحافظ</h1>
+            <p class="text-body-md text-dark-on-surface-variant" data-design-text-token="body-md">أرصدة النقد والبنوك</p>
+          </div>
+          <button type="button" onclick="openWalletForm()" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" class="shrink-0 inline-flex items-center gap-gutter-xs bg-emerald-primary text-on-emerald-primary font-label text-label-lg px-gutter-md py-2 rounded-full hover:bg-dark-primary transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg" aria-hidden="true">add</span>
+            <span data-design-text-token="label-lg">محفظة جديدة</span>
+          </button>
+        </header>
+
+        <section id="wallets-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-md">
+          <!-- Populated by JS -->
+        </section>
+
+        <section id="archived-section" class="hidden flex-col gap-gutter-sm">
+          <h2 class="font-headline text-title-lg text-dark-on-surface-variant" data-design-text-token="title-lg">المحافظ المؤرشفة</h2>
+          <div id="archived-grid" class="grid grid-cols-1 md:grid-cols-2 gap-gutter-md"></div>
+        </section>
+      </div>
+
+      <!-- Wallet Details View -->
+      <div id="wallet-detail-view" class="hidden flex-col gap-gutter-lg">
+        <header class="flex items-center justify-between gap-gutter-sm">
+          <div class="flex items-center gap-gutter-sm">
+            <button type="button" onclick="closeWalletDetails()" aria-label="العودة للمحافظ" class="w-10 h-10 rounded-full bg-card-surface border border-dark-outline-variant flex items-center justify-center text-dark-on-surface hover:bg-dark-surface-container-high">
+              <span class="material-symbols-outlined text-title-lg">arrow_forward</span>
+            </button>
+            <div>
+              <h1 id="detail-wallet-name" class="font-headline text-headline-md text-dark-on-surface" data-design-text-token="headline-md">BMCI</h1>
+              <p id="detail-wallet-type" class="text-label-sm text-dark-on-surface-variant" data-design-text-token="label-sm">حساب بنكي • MRU</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-gutter-xs">
+            <button type="button" onclick="openEditWallet()" class="px-gutter-md py-2 rounded-full bg-card-surface border border-dark-outline-variant text-label-sm text-dark-on-surface hover:bg-dark-surface-container-high">تعديل</button>
+            <button type="button" onclick="openReconcileModal()" class="px-gutter-md py-2 rounded-full bg-dark-surface-container-high border border-dark-outline-variant text-label-sm text-muted-gold hover:bg-dark-surface-bright">تسوية الرصيد</button>
+          </div>
+        </header>
+
+        <!-- Balance & Stats -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter-md">
+          <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-lg flex flex-col gap-gutter-xs">
+            <span class="text-label-sm text-dark-on-surface-variant">الرصيد الحالي</span>
+            <p id="detail-balance" class="font-headline text-headline-lg text-dark-on-surface tabular-nums" dir="ltr">0 MRU</p>
+          </article>
+          <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-lg flex flex-col gap-gutter-xs">
+            <span class="text-label-sm text-dark-on-surface-variant">إجمالي الدخل</span>
+            <p id="detail-income" class="font-headline text-headline-md text-income-green tabular-nums" dir="ltr">0 MRU</p>
+          </article>
+          <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-lg flex flex-col gap-gutter-xs">
+            <span class="text-label-sm text-dark-on-surface-variant">إجمالي المصروفات</span>
+            <p id="detail-expense" class="font-headline text-headline-md text-expense-coral tabular-nums" dir="ltr">0 MRU</p>
+          </article>
+        </section>
+
+        <!-- Monthly Mini Chart -->
+        <section class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-lg flex flex-col gap-gutter-sm">
+          <h2 class="font-headline text-title-lg text-dark-on-surface">النشاط الشهري للمحفظة</h2>
+          <div id="detail-chart" class="h-32 flex items-end justify-between gap-gutter-sm pt-gutter-sm"></div>
+        </section>
+
+        <!-- Wallet Transactions -->
+        <section class="flex flex-col gap-gutter-sm">
+          <div class="flex items-center justify-between">
+            <h2 class="font-headline text-title-lg text-dark-on-surface">سجل عمليات المحفظة</h2>
+            <button type="button" id="archive-wallet-btn" onclick="toggleArchiveWallet()" class="text-label-sm text-expense-coral hover:underline">أرشفة المحفظة</button>
+          </div>
+          <div id="detail-tx-list" class="bg-card-surface border border-dark-outline-variant rounded-md divide-y divide-dark-outline-variant"></div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Mobile Bottom Navigation + FAB -->
+    <nav aria-label="التنقل السفلي" class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-card-surface border-t border-dark-outline-variant px-gutter-sm py-gutter-xs">
+      <div class="max-w-md mx-auto grid grid-cols-5 items-center relative">
+        <a href="../home-dashboard/HomeDashboard.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">home</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">الرئيسية</span>
+        </a>
+        <a href="../wallets/Wallets.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-emerald-primary">
+          <span class="material-symbols-outlined text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;">account_balance_wallet</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">المحافظ</span>
+        </a>
+        <div class="flex items-center justify-center">
+          <a href="../home-dashboard/HomeDashboard.html" aria-label="إضافة عملية" class="-mt-7 w-14 h-14 rounded-full bg-emerald-primary text-on-emerald-primary flex items-center justify-center border-4 border-dark-surface hover:bg-dark-primary">
+            <span class="material-symbols-outlined text-headline-lg">add</span>
+          </a>
+        </div>
+        <a href="../transactions/Transactions.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">receipt_long</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">العمليات</span>
+        </a>
+        <a href="../more-hub/MoreHub.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">grid_view</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">المزيد</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Create / Edit Wallet Modal -->
+  <dialog id="wallet-form-modal" class="bg-card-surface text-dark-on-surface border border-dark-outline-variant rounded-xl p-gutter-lg w-full max-w-md backdrop:bg-dark-scrim/80">
+    <header class="flex items-center justify-between pb-gutter-md border-b border-dark-outline-variant">
+      <h2 id="wf-title" class="font-headline text-title-lg text-dark-on-surface">إضافة محفظة</h2>
+      <button type="button" onclick="document.getElementById(&#39;wallet-form-modal&#39;).close()" aria-label="إغلاق" class="w-9 h-9 rounded-full inline-flex items-center justify-center bg-dark-surface-container-high text-dark-on-surface-variant">
+        <span class="material-symbols-outlined text-title-lg">close</span>
+      </button>
+    </header>
+    <form onsubmit="saveWalletForm(event)" class="py-gutter-md flex flex-col gap-gutter-md">
+      <input type="hidden" id="wf-id">
+      <label class="flex flex-col gap-gutter-xs">
+        <span class="text-label-lg text-dark-on-surface">اسم المحفظة</span>
+        <input id="wf-name" type="text" required placeholder="مثال: البنك الشعبي" class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md text-dark-on-surface">
+      </label>
+      <div class="grid grid-cols-2 gap-gutter-sm">
+        <label class="flex flex-col gap-gutter-xs">
+          <span class="text-label-lg text-dark-on-surface">نوع الحساب</span>
+          <select id="wf-type" class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-sm py-2.5 text-body-md text-dark-on-surface">
+            <option value="cash">نقدي</option>
+            <option value="bank">حساب بنكي</option>
+            <option value="mobile">محفظة هاتف</option>
+            <option value="savings">محفظة ادخار</option>
+            <option value="custom">مخصص</option>
+          </select>
+        </label>
+        <label class="flex flex-col gap-gutter-xs">
+          <span class="text-label-lg text-dark-on-surface">العملة</span>
+          <select id="wf-currency" class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-sm py-2.5 text-body-md text-dark-on-surface">
+            <option value="MRU">MRU</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="MAD">MAD</option>
+            <option value="XOF">XOF</option>
+          </select>
+        </label>
+      </div>
+      <label class="flex flex-col gap-gutter-xs">
+        <span class="text-label-lg text-dark-on-surface">الرصيد</span>
+        <input id="wf-balance" type="number" step="0.01" required dir="ltr" class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md text-dark-on-surface tabular-nums">
+      </label>
+      <label class="flex flex-col gap-gutter-xs">
+        <span class="text-label-lg text-dark-on-surface">وصف اختياري</span>
+        <input id="wf-desc" type="text" placeholder="ملاحظة حول الحساب..." class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md text-dark-on-surface">
+      </label>
+      <button type="submit" class="w-full py-3 rounded-full bg-emerald-primary text-on-emerald-primary font-label text-label-lg hover:bg-dark-primary">حفظ المحفظة</button>
+    </form>
+  </dialog>
+
+  <!-- Reconcile Balance Modal -->
+  <dialog id="reconcile-modal" class="bg-card-surface text-dark-on-surface border border-dark-outline-variant rounded-xl p-gutter-lg w-full max-w-sm backdrop:bg-dark-scrim/80">
+    <header class="flex items-center justify-between pb-gutter-md border-b border-dark-outline-variant">
+      <h2 class="font-headline text-title-lg text-dark-on-surface">تسوية الرصيد</h2>
+      <button type="button" onclick="document.getElementById(&#39;reconcile-modal&#39;).close()" aria-label="إغلاق" class="w-9 h-9 rounded-full inline-flex items-center justify-center bg-dark-surface-container-high text-dark-on-surface-variant">
+        <span class="material-symbols-outlined text-title-lg">close</span>
+      </button>
+    </header>
+    <form onsubmit="submitReconcile(event)" class="py-gutter-md flex flex-col gap-gutter-md">
+      <p class="text-body-md text-dark-on-surface-variant">أدخل الرصيد الفعلي الحالي وسيتم إنشاء قيد تسوية تلقائي لمطابقة الحساب.</p>
+      <label class="flex flex-col gap-gutter-xs">
+        <span class="text-label-lg text-dark-on-surface">الرصيد الفعلي</span>
+        <input id="rec-balance" type="number" step="0.01" required dir="ltr" class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-lg text-dark-on-surface tabular-nums">
+      </label>
+      <button type="submit" class="w-full py-3 rounded-full bg-muted-gold text-on-muted-gold font-label text-label-lg">تأكيد التسوية</button>
+    </form>
+  </dialog>
+
+  <script>
+    const DB_KEY = 'mali_finance_db_v1';
+    let memFallback = null;
+    function loadDB() {
+      try { const r = localStorage.getItem(DB_KEY); if (r) return JSON.parse(r); } catch (e) {}
+      if (!memFallback) memFallback = {
+        isDemo: true, primaryCurrency: 'MRU',
+        wallets: [
+          { id: 'w_cash', name: 'النقدي', type: 'cash', balance: 120000, currency: 'MRU', icon: 'payments', archived: false },
+          { id: 'w_bmci', name: 'BMCI', type: 'bank', balance: 350000, currency: 'MRU', icon: 'account_balance', archived: false },
+          { id: 'w_bp', name: 'البنك الشعبي', type: 'bank', balance: 80000, currency: 'MRU', icon: 'account_balance', archived: false }
+        ],
+        categories: [
+          { id: 'c_food', name: 'طعام ومطاعم', type: 'expense', icon: 'restaurant' },
+          { id: 'c_bills', name: 'فواتير', type: 'expense', icon: 'receipt' },
+          { id: 'c_trans', name: 'نقل ومواصلات', type: 'expense', icon: 'directions_car' },
+          { id: 'c_salary', name: 'راتب', type: 'income', icon: 'payments' }
+        ],
+        transactions: [
+          { id: 't_1', type: 'income', amount: 280000, walletId: 'w_bmci', categoryId: 'c_salary', date: '2026-11-20', note: 'الراتب الشهري', currency: 'MRU' },
+          { id: 't_2', type: 'expense', amount: 14500, walletId: 'w_cash', categoryId: 'c_food', date: '2026-11-20', note: 'سوبرماركت التيسير', currency: 'MRU' },
+          { id: 't_3', type: 'transfer', amount: 20000, walletId: 'w_cash', toWalletId: 'w_bmci', date: '2026-11-19', note: 'إيداع نقدي في BMCI', currency: 'MRU' },
+          { id: 't_4', type: 'expense', amount: 8500, walletId: 'w_bp', categoryId: 'c_bills', date: '2026-11-18', note: 'فاتورة الكهرباء سوملك', currency: 'MRU' }
+        ]
+      };
+      return memFallback;
+    }
+    function saveDB(d) { memFallback = d; try { localStorage.setItem(DB_KEY, JSON.stringify(d)); } catch (e) {} }
+
+    let db = loadDB();
+    let selectedWalletId = null;
+
+    function formatMoney(amt, cur = 'MRU') {
+      return (Math.round(Number(amt) * 100) / 100).toLocaleString('en-US', { maximumFractionDigits: 2 }) + ' ' + cur;
+    }
+    function typeLabel(t) {
+      return { cash: 'نقدي', bank: 'حساب بنكي', mobile: 'محفظة هاتف', savings: 'محفظة ادخار', custom: 'مخصص' }[t] || 'محفظة';
+    }
+
+    function renderWallets() {
+      db = loadDB();
+      const active = db.wallets.filter(w => !w.archived);
+      const archived = db.wallets.filter(w => w.archived);
+
+      document.getElementById('wallets-grid').innerHTML = active.map(w => `
+        <article onclick="openWalletDetails('${w.id}')" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-lg flex flex-col gap-gutter-md hover:border-emerald-primary cursor-pointer transition-colors duration-state-change">
+          <header class="flex items-center justify-between gap-gutter-sm">
+            <div>
+              <h3 class="font-headline text-title-lg text-dark-on-surface" data-design-text-token="title-lg">${w.name}</h3>
+              <p class="text-label-sm text-dark-on-surface-variant" data-design-text-token="label-sm">${typeLabel(w.type)} • ${w.currency}</p>
+            </div>
+            <div class="w-11 h-11 rounded-full bg-dark-surface-container-high flex items-center justify-center">
+              <span class="material-symbols-outlined text-emerald-primary text-headline-md" aria-hidden="true">${w.icon || 'account_balance_wallet'}</span>
+            </div>
+          </header>
+          <p class="font-headline text-headline-lg text-dark-on-surface tabular-nums" dir="ltr" data-design-text-token="headline-lg">${formatMoney(w.balance, w.currency)}</p>
+        </article>
+      `).join('');
+
+      const archSec = document.getElementById('archived-section');
+      if (archived.length > 0) {
+        archSec.classList.remove('hidden');
+        archSec.classList.add('flex');
+        document.getElementById('archived-grid').innerHTML = archived.map(w => `
+          <article onclick="openWalletDetails('${w.id}')" class="bg-dark-surface-container-low border border-dark-outline-variant rounded-md p-gutter-md flex items-center justify-between opacity-75 cursor-pointer">
+            <div>
+              <p class="font-headline text-title-md text-dark-on-surface">${w.name}</p>
+              <p class="text-label-sm text-dark-on-surface-variant">${typeLabel(w.type)} • مؤرشفة</p>
+            </div>
+            <p class="font-headline text-title-md tabular-nums" dir="ltr">${formatMoney(w.balance, w.currency)}</p>
+          </article>
+        `).join('');
+      } else {
+        archSec.classList.add('hidden');
+      }
+    }
+
+    function openWalletDetails(id) {
+      selectedWalletId = id;
+      const w = db.wallets.find(x => x.id === id);
+      if (!w) return;
+      document.getElementById('wallets-list-view').classList.add('hidden');
+      document.getElementById('wallet-detail-view').classList.remove('hidden');
+      document.getElementById('wallet-detail-view').classList.add('flex');
+
+      document.getElementById('detail-wallet-name').textContent = w.name;
+      document.getElementById('detail-wallet-type').textContent = `${typeLabel(w.type)} • ${w.currency}`;
+      document.getElementById('detail-balance').textContent = formatMoney(w.balance, w.currency);
+      document.getElementById('archive-wallet-btn').textContent = w.archived ? 'إلغاء الأرشفة' : 'أرشفة المحفظة';
+
+      const wTxs = db.transactions.filter(t => t.walletId === id || t.toWalletId === id);
+      let inc = 0, exp = 0;
+      wTxs.forEach(t => {
+        if (t.type === 'income' && t.walletId === id) inc += Number(t.amount);
+        else if (t.type === 'expense' && t.walletId === id) exp += Number(t.amount);
+      });
+      document.getElementById('detail-income').textContent = formatMoney(inc, w.currency);
+      document.getElementById('detail-expense').textContent = formatMoney(exp, w.currency);
+
+      const bars = ['أسبوع 1', 'أسبوع 2', 'أسبوع 3', 'أسبوع 4'].map((lbl, idx) => {
+        const h = [42, 78, 56, 92][idx];
+        return `<div class="flex-1 flex flex-col items-center gap-1"><div style="height:${h}px" class="w-full max-w-[28px] rounded-t bg-emerald-primary/80"></div><span class="text-label-sm text-dark-on-surface-variant">${lbl}</span></div>`;
+      }).join('');
+      document.getElementById('detail-chart').innerHTML = bars;
+
+      const list = document.getElementById('detail-tx-list');
+      list.innerHTML = wTxs.length ? wTxs.map(t => {
+        const isInc = t.type === 'income' || (t.type === 'transfer' && t.toWalletId === id);
+        const cls = t.type === 'transfer' ? 'text-muted-gold' : (isInc ? 'text-income-green' : 'text-expense-coral');
+        const sign = isInc ? '+' : '-';
+        return `
+          <div class="flex items-center justify-between p-gutter-md">
+            <div>
+              <p class="text-body-md font-bold text-dark-on-surface">${t.note || (t.type === 'transfer' ? 'تحويل داخلي' : 'عملية')}</p>
+              <p class="text-label-sm text-dark-on-surface-variant">${t.date}</p>
+            </div>
+            <p class="font-headline text-title-md ${cls} tabular-nums" dir="ltr">${sign} ${formatMoney(t.amount, w.currency)}</p>
+          </div>
+        `;
+      }).join('') : `<div class="p-gutter-lg text-center text-body-md text-dark-on-surface-variant">لا توجد عمليات في هذه المحفظة بعد.</div>`;
+    }
+
+    function closeWalletDetails() {
+      selectedWalletId = null;
+      document.getElementById('wallet-detail-view').classList.add('hidden');
+      document.getElementById('wallets-list-view').classList.remove('hidden');
+      renderWallets();
+    }
+
+    function openWalletForm() {
+      document.getElementById('wf-title').textContent = 'إضافة محفظة جديدة';
+      document.getElementById('wf-id').value = '';
+      document.getElementById('wf-name').value = '';
+      document.getElementById('wf-type').value = 'bank';
+      document.getElementById('wf-currency').value = 'MRU';
+      document.getElementById('wf-balance').value = '0';
+      document.getElementById('wf-desc').value = '';
+      document.getElementById('wallet-form-modal').showModal();
+    }
+
+    function openEditWallet() {
+      const w = db.wallets.find(x => x.id === selectedWalletId);
+      if (!w) return;
+      document.getElementById('wf-title').textContent = 'تعديل المحفظة';
+      document.getElementById('wf-id').value = w.id;
+      document.getElementById('wf-name').value = w.name;
+      document.getElementById('wf-type').value = w.type;
+      document.getElementById('wf-currency').value = w.currency;
+      document.getElementById('wf-balance').value = w.balance;
+      document.getElementById('wf-desc').value = w.desc || '';
+      document.getElementById('wallet-form-modal').showModal();
+    }
+
+    function saveWalletForm(e) {
+      e.preventDefault();
+      const id = document.getElementById('wf-id').value;
+      const name = document.getElementById('wf-name').value.trim();
+      const type = document.getElementById('wf-type').value;
+      const currency = document.getElementById('wf-currency').value;
+      const balance = Math.round(parseFloat(document.getElementById('wf-balance').value || 0) * 100) / 100;
+      const desc = document.getElementById('wf-desc').value.trim();
+      const iconMap = { cash: 'payments', bank: 'account_balance', mobile: 'smartphone', savings: 'savings', custom: 'account_balance_wallet' };
+
+      if (id) {
+        const w = db.wallets.find(x => x.id === id);
+        Object.assign(w, { name, type, currency, balance, desc, icon: iconMap[type] || 'account_balance_wallet' });
+      } else {
+        db.wallets.push({ id: 'w_' + Date.now(), name, type, currency, balance, desc, icon: iconMap[type] || 'account_balance_wallet', archived: false });
+      }
+      saveDB(db);
+      document.getElementById('wallet-form-modal').close();
+      if (selectedWalletId) openWalletDetails(selectedWalletId); else renderWallets();
+    }
+
+    function openReconcileModal() {
+      const w = db.wallets.find(x => x.id === selectedWalletId);
+      if (!w) return;
+      document.getElementById('rec-balance').value = w.balance;
+      document.getElementById('reconcile-modal').showModal();
+    }
+
+    function submitReconcile(e) {
+      e.preventDefault();
+      const w = db.wallets.find(x => x.id === selectedWalletId);
+      const target = Math.round(parseFloat(document.getElementById('rec-balance').value) * 100) / 100;
+      const diff = Math.round((target - Number(w.balance)) * 100) / 100;
+      if (diff !== 0) {
+        w.balance = target;
+        db.transactions.unshift({
+          id: 't_' + Date.now(),
+          type: diff > 0 ? 'income' : 'expense',
+          amount: Math.abs(diff),
+          walletId: w.id,
+          categoryId: null,
+          date: new Date().toISOString().split('T')[0],
+          note: 'تسوية رصيد المحفظة',
+          currency: w.currency
+        });
+        saveDB(db);
+      }
+      document.getElementById('reconcile-modal').close();
+      openWalletDetails(selectedWalletId);
+    }
+
+    function toggleArchiveWallet() {
+      const w = db.wallets.find(x => x.id === selectedWalletId);
+      if (!w) return;
+      w.archived = !w.archived;
+      saveDB(db);
+      closeWalletDetails();
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('id')) openWalletDetails(params.get('id'));
+    else renderWallets();
+  </script>
+
+
+</body></html>

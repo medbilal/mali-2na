@@ -1,0 +1,537 @@
+<!DOCTYPE html><html lang="ar" dir="rtl" class="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>العمليات — MALI – مالي</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="14546e634a2f4b9a===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'emerald-primary': '#19C37D',
+        'on-emerald-primary': '#002B17',
+        'muted-gold': '#D6B56D',
+        'on-muted-gold': '#2A1E00',
+        'charcoal-bg': '#101318',
+        'card-surface': '#1B2026',
+        'income-green': '#19C37D',
+        'expense-coral': '#F26464',
+        'warning-amber': '#E4C279',
+        'dark-primary': '#48E096',
+        'dark-on-primary': '#003920',
+        'dark-primary-container': '#19C37D',
+        'dark-on-primary-container': '#002915',
+        'dark-secondary': '#E4C279',
+        'dark-on-secondary': '#3F2E00',
+        'dark-secondary-container': '#5D4606',
+        'dark-on-secondary-container': '#FFDF9C',
+        'dark-tertiary': '#FFB5A2',
+        'dark-on-tertiary': '#601402',
+        'dark-tertiary-container': '#FF8B6E',
+        'dark-on-tertiary-container': '#420B00',
+        'dark-error': '#FFB3AF',
+        'dark-on-error': '#68000D',
+        'dark-error-container': '#910518',
+        'dark-on-error-container': '#FFDAD7',
+        'dark-background': '#101318',
+        'dark-on-background': '#E6E8EE',
+        'dark-surface': '#101318',
+        'dark-surface-dim': '#0B0E13',
+        'dark-surface-bright': '#2A3038',
+        'dark-surface-container-lowest': '#0B0E13',
+        'dark-surface-container-low': '#15191F',
+        'dark-surface-container': '#1B2026',
+        'dark-surface-container-high': '#232931',
+        'dark-surface-container-highest': '#2D343E',
+        'dark-on-surface': '#E6E8EE',
+        'dark-surface-variant': '#2D343E',
+        'dark-on-surface-variant': '#9BA3B0',
+        'dark-outline': '#7A828F',
+        'dark-outline-variant': '#2A313B',
+        'dark-inverse-surface': '#E6E8EE',
+        'dark-inverse-on-surface': '#1B2026',
+        'dark-inverse-primary': '#006D43',
+        'dark-shadow': '#000000',
+        'dark-scrim': '#000000',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '12px',
+        'md': '16px',
+        'lg': '20px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '32px',
+        'page-margin': '16px',
+      },
+      fontFamily: {
+        'display': ['"Cairo"', 'sans-serif'],
+        'headline': ['"Cairo"', 'sans-serif'],
+        'title': ['"Cairo"', 'sans-serif'],
+        'body': ['"Tajawal"', 'sans-serif'],
+        'label': ['"Tajawal"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['28px', { lineHeight: '36px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-md': ['22px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '700' }],
+        'title-lg': ['18px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '700' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '700' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '220ms',
+        'surface-exit': '160ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&amp;family=Tajawal:wght@400;500;700&amp;family=Source+Code+Pro:wght@600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-dark-surface text-dark-on-surface font-body antialiased overflow-x-hidden">
+
+  <div class="min-h-screen flex flex-col lg:flex-row">
+    <!-- Desktop RTL Sidebar -->
+    <aside class="hidden lg:flex lg:flex-col lg:w-64 lg:shrink-0 min-h-screen bg-dark-surface-container border-l border-dark-outline-variant p-gutter-lg justify-between sticky top-0">
+      <div class="flex flex-col gap-gutter-xl">
+        <div class="flex items-center gap-gutter-sm">
+          <div class="w-10 h-10 rounded-md bg-emerald-primary text-on-emerald-primary flex items-center justify-center font-headline text-title-lg">م</div>
+          <div>
+            <p class="font-headline text-title-lg text-dark-on-surface" data-design-text-token="title-lg">MALI – مالي</p>
+            <p class="text-label-sm text-dark-on-surface-variant" data-design-text-token="label-sm">إدارة المال الذكية</p>
+          </div>
+        </div>
+        <nav class="flex flex-col gap-gutter-xs" aria-label="التنقل الرئيسي">
+          <a href="../home-dashboard/HomeDashboard.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">home</span>
+            <span data-design-text-token="label-lg">الرئيسية</span>
+          </a>
+          <a href="../wallets/Wallets.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">account_balance_wallet</span>
+            <span data-design-text-token="label-lg">المحافظ</span>
+          </a>
+          <a href="../transactions/Transactions.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded bg-dark-surface-container-high text-emerald-primary font-label text-label-lg">
+            <span class="material-symbols-outlined text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;">receipt_long</span>
+            <span data-design-text-token="label-lg">العمليات</span>
+          </a>
+          <a href="../reports/Reports.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">monitoring</span>
+            <span data-design-text-token="label-lg">التقارير</span>
+          </a>
+          <a href="../more-hub/MoreHub.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">grid_view</span>
+            <span data-design-text-token="label-lg">المزيد</span>
+          </a>
+        </nav>
+      </div>
+      <button type="button" onclick="openTxEditModal(null)" class="w-full inline-flex items-center justify-center gap-gutter-sm bg-emerald-primary text-on-emerald-primary font-label text-label-lg px-gutter-lg py-3 rounded-full hover:bg-dark-primary">
+        <span class="material-symbols-outlined text-title-lg" aria-hidden="true">add</span>
+        <span data-design-text-token="label-lg">إضافة عملية</span>
+      </button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0 w-full max-w-5xl mx-auto px-page-margin lg:px-gutter-xl pt-gutter-md pb-28 lg:pb-gutter-xl flex flex-col gap-gutter-md">
+      <header class="flex items-center justify-between gap-gutter-md">
+        <div>
+          <h1 class="font-headline text-headline-lg text-dark-on-surface" data-design-text-token="headline-lg">سجل العمليات</h1>
+          <p class="text-body-md text-dark-on-surface-variant" data-design-text-token="body-md">البحث والتصفية والتعديل الكامل للمعاملات</p>
+        </div>
+        <button type="button" onclick="openTxEditModal(null)" class="inline-flex items-center gap-gutter-xs bg-emerald-primary text-on-emerald-primary font-label text-label-lg px-gutter-md py-2 rounded-full hover:bg-dark-primary">
+          <span class="material-symbols-outlined text-title-lg" aria-hidden="true">add</span>
+          <span data-design-text-token="label-lg">جديد</span>
+        </button>
+      </header>
+
+      <!-- Search & Filters -->
+      <section class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-md flex flex-col gap-gutter-sm">
+        <div class="relative flex items-center">
+          <span class="material-symbols-outlined absolute right-3 text-dark-on-surface-variant text-title-lg pointer-events-none" aria-hidden="true">search</span>
+          <input id="search-q" type="search" oninput="renderList()" placeholder="ابحث بالوصف أو الملاحظة..." class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded pr-10 pl-gutter-md py-2.5 text-body-md text-dark-on-surface placeholder:text-dark-outline focus:border-emerald-primary focus:ring-1 focus:ring-emerald-primary">
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter-xs">
+          <select id="filter-type" onchange="renderList()" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-sm py-2 text-label-sm text-dark-on-surface">
+            <option value="all">كل الأنواع</option>
+            <option value="expense">مصروفات</option>
+            <option value="income">دخل</option>
+            <option value="transfer">تحويلات</option>
+          </select>
+          <select id="filter-wallet" onchange="renderList()" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-sm py-2 text-label-sm text-dark-on-surface"></select>
+          <select id="filter-category" onchange="renderList()" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-sm py-2 text-label-sm text-dark-on-surface"></select>
+          <select id="sort-order" onchange="renderList()" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-sm py-2 text-label-sm text-dark-on-surface">
+            <option value="newest">الأحدث أولاً</option>
+            <option value="oldest">الأقدم أولاً</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Grouped Transactions List -->
+      <section id="grouped-tx-container" class="flex flex-col gap-gutter-md">
+        <!-- Populated by JS -->
+      </section>
+    </main>
+
+    <!-- Mobile Bottom Navigation + FAB -->
+    <nav aria-label="التنقل السفلي" class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-card-surface border-t border-dark-outline-variant px-gutter-sm py-gutter-xs">
+      <div class="max-w-md mx-auto grid grid-cols-5 items-center relative">
+        <a href="../home-dashboard/HomeDashboard.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">home</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">الرئيسية</span>
+        </a>
+        <a href="../wallets/Wallets.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">account_balance_wallet</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">المحافظ</span>
+        </a>
+        <div class="flex items-center justify-center">
+          <button type="button" onclick="openTxEditModal(null)" aria-label="إضافة عملية" class="-mt-7 w-14 h-14 rounded-full bg-emerald-primary text-on-emerald-primary flex items-center justify-center border-4 border-dark-surface hover:bg-dark-primary">
+            <span class="material-symbols-outlined text-headline-lg">add</span>
+          </button>
+        </div>
+        <a href="../transactions/Transactions.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-emerald-primary">
+          <span class="material-symbols-outlined text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;">receipt_long</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">العمليات</span>
+        </a>
+        <a href="../more-hub/MoreHub.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">grid_view</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">المزيد</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Add/Edit Transaction Modal -->
+  <dialog id="tx-edit-modal" class="bg-card-surface text-dark-on-surface border border-dark-outline-variant rounded-xl p-gutter-lg w-full max-w-md backdrop:bg-dark-scrim/80">
+    <header class="flex items-center justify-between pb-gutter-md border-b border-dark-outline-variant">
+      <h2 id="txm-title" class="font-headline text-title-lg text-dark-on-surface">تعديل العملية</h2>
+      <button type="button" onclick="document.getElementById(&#39;tx-edit-modal&#39;).close()" aria-label="إغلاق" class="w-9 h-9 rounded-full inline-flex items-center justify-center bg-dark-surface-container-high text-dark-on-surface-variant">
+        <span class="material-symbols-outlined text-title-lg">close</span>
+      </button>
+    </header>
+    <form onsubmit="saveTx(event)" class="py-gutter-md flex flex-col gap-gutter-md">
+      <input type="hidden" id="txm-id">
+      <div class="grid grid-cols-3 gap-gutter-xs p-gutter-xs bg-dark-surface-container-low border border-dark-outline-variant rounded-full">
+        <button type="button" id="m-tab-expense" onclick="setModalType(&#39;expense&#39;)" class="py-1.5 rounded-full text-label-sm">مصروف</button>
+        <button type="button" id="m-tab-income" onclick="setModalType(&#39;income&#39;)" class="py-1.5 rounded-full text-label-sm">دخل</button>
+        <button type="button" id="m-tab-transfer" onclick="setModalType(&#39;transfer&#39;)" class="py-1.5 rounded-full text-label-sm">تحويل</button>
+      </div>
+
+      <label class="flex flex-col gap-gutter-xs">
+        <span class="text-label-lg text-dark-on-surface">المبلغ</span>
+        <input id="txm-amount" type="number" step="0.01" min="0.01" required dir="ltr" class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-headline-md text-dark-on-surface tabular-nums text-center">
+      </label>
+
+      <label class="flex flex-col gap-gutter-xs">
+        <span id="txm-w-label" class="text-label-lg text-dark-on-surface">المحفظة</span>
+        <select id="txm-wallet" class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md text-dark-on-surface"></select>
+      </label>
+
+      <label id="txm-to-wrap" class="hidden flex-col gap-gutter-xs">
+        <span class="text-label-lg text-dark-on-surface">إلى محفظة</span>
+        <select id="txm-to-wallet" class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md text-dark-on-surface"></select>
+      </label>
+
+      <label id="txm-cat-wrap" class="flex flex-col gap-gutter-xs">
+        <span class="text-label-lg text-dark-on-surface">التصنيف</span>
+        <select id="txm-category" class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md text-dark-on-surface"></select>
+      </label>
+
+      <div class="grid grid-cols-2 gap-gutter-sm">
+        <label class="flex flex-col gap-gutter-xs">
+          <span class="text-label-lg text-dark-on-surface">التاريخ</span>
+          <input id="txm-date" type="date" required class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-sm py-2.5 text-body-md text-dark-on-surface">
+        </label>
+        <label class="flex flex-col gap-gutter-xs">
+          <span class="text-label-lg text-dark-on-surface">ملاحظة</span>
+          <input id="txm-note" type="text" class="w-full bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-sm py-2.5 text-body-md text-dark-on-surface">
+        </label>
+      </div>
+
+      <p id="txm-err" class="hidden text-label-sm text-expense-coral"></p>
+      <button type="submit" class="w-full py-3 rounded-full bg-emerald-primary text-on-emerald-primary font-label text-label-lg">حفظ التغييرات</button>
+    </form>
+  </dialog>
+
+  <!-- Delete Confirmation Modal -->
+  <dialog id="delete-confirm-modal" role="alertdialog" class="bg-card-surface text-dark-on-surface border border-dark-outline-variant rounded-xl p-gutter-lg w-full max-w-sm backdrop:bg-dark-scrim/80">
+    <h2 class="font-headline text-title-lg text-dark-on-surface pb-gutter-sm">تأكيد حذف العملية؟</h2>
+    <p class="text-body-md text-dark-on-surface-variant pb-gutter-md">سيتم حذف العملية وعكس أثرها المالي على رصيد المحفظة تلقائياً.</p>
+    <div class="flex items-center justify-end gap-gutter-sm">
+      <button type="button" onclick="document.getElementById(&#39;delete-confirm-modal&#39;).close()" class="px-gutter-md py-2 rounded-full bg-dark-surface-container-high text-dark-on-surface text-label-lg">إلغاء</button>
+      <button type="button" onclick="confirmDeleteTx()" class="px-gutter-md py-2 rounded-full bg-dark-error-container text-dark-on-error-container text-label-lg">حذف نهائي</button>
+    </div>
+  </dialog>
+
+  <script>
+    const DB_KEY = 'mali_finance_db_v1';
+    let memFallback = null;
+    function loadDB() {
+      try { const r = localStorage.getItem(DB_KEY); if (r) return JSON.parse(r); } catch (e) {}
+      if (!memFallback) memFallback = {
+        wallets: [
+          { id: 'w_cash', name: 'النقدي', type: 'cash', balance: 120000, currency: 'MRU', archived: false },
+          { id: 'w_bmci', name: 'BMCI', type: 'bank', balance: 350000, currency: 'MRU', archived: false },
+          { id: 'w_bp', name: 'البنك الشعبي', type: 'bank', balance: 80000, currency: 'MRU', archived: false }
+        ],
+        categories: [
+          { id: 'c_food', name: 'طعام ومطاعم', type: 'expense', icon: 'restaurant' },
+          { id: 'c_bills', name: 'فواتير', type: 'expense', icon: 'receipt' },
+          { id: 'c_trans', name: 'نقل ومواصلات', type: 'expense', icon: 'directions_car' },
+          { id: 'c_salary', name: 'راتب', type: 'income', icon: 'payments' },
+          { id: 'c_free', name: 'عمل حر', type: 'income', icon: 'laptop_mac' }
+        ],
+        transactions: [
+          { id: 't_1', type: 'income', amount: 280000, walletId: 'w_bmci', categoryId: 'c_salary', date: '2026-11-20', note: 'الراتب الشهري', currency: 'MRU' },
+          { id: 't_2', type: 'expense', amount: 14500, walletId: 'w_cash', categoryId: 'c_food', date: '2026-11-20', note: 'سوبرماركت التيسير', currency: 'MRU' },
+          { id: 't_3', type: 'transfer', amount: 20000, walletId: 'w_cash', toWalletId: 'w_bmci', date: '2026-11-19', note: 'إيداع نقدي في BMCI', currency: 'MRU' },
+          { id: 't_4', type: 'expense', amount: 8500, walletId: 'w_bp', categoryId: 'c_bills', date: '2026-11-18', note: 'فاتورة الكهرباء سوملك', currency: 'MRU' }
+        ]
+      };
+      return memFallback;
+    }
+    function saveDB(d) { memFallback = d; try { localStorage.setItem(DB_KEY, JSON.stringify(d)); } catch (e) {} }
+
+    let db = loadDB();
+    let modalType = 'expense';
+    let pendingDeleteId = null;
+
+    function fmt(a, c = 'MRU') { return (Math.round(Number(a) * 100) / 100).toLocaleString('en-US', { maximumFractionDigits: 2 }) + ' ' + c; }
+
+    function populateFilterSelects() {
+      db = loadDB();
+      document.getElementById('filter-wallet').innerHTML = '<option value="all">كل المحافظ</option>' + db.wallets.map(w => `<option value="${w.id}">${w.name}</option>`).join('');
+      document.getElementById('filter-category').innerHTML = '<option value="all">كل التصنيفات</option>' + db.categories.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+    }
+
+    function renderList() {
+      db = loadDB();
+      const q = document.getElementById('search-q').value.trim().toLowerCase();
+      const fType = document.getElementById('filter-type').value;
+      const fWallet = document.getElementById('filter-wallet').value;
+      const fCat = document.getElementById('filter-category').value;
+      const sort = document.getElementById('sort-order').value;
+
+      let list = db.transactions.filter(t => {
+        if (fType !== 'all' && t.type !== fType) return false;
+        if (fWallet !== 'all' && t.walletId !== fWallet && t.toWalletId !== fWallet) return false;
+        if (fCat !== 'all' && t.categoryId !== fCat) return false;
+        if (q) {
+          const cat = db.categories.find(c => c.id === t.categoryId);
+          const w = db.wallets.find(x => x.id === t.walletId);
+          const hay = ((t.note || '') + ' ' + (cat ? cat.name : '') + ' ' + (w ? w.name : '')).toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      list.sort((a, b) => sort === 'newest' ? b.date.localeCompare(a.date) : a.date.localeCompare(b.date));
+
+      const container = document.getElementById('grouped-tx-container');
+      if (list.length === 0) {
+        container.innerHTML = `<div class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-xl text-center text-body-md text-dark-on-surface-variant">لا توجد عمليات مطابقة للبحث.</div>`;
+        return;
+      }
+
+      const groups = {};
+      list.forEach(t => {
+        if (!groups[t.date]) groups[t.date] = [];
+        groups[t.date].push(t);
+      });
+
+      container.innerHTML = Object.keys(groups).map(date => {
+        const items = groups[date];
+        const dayNet = items.reduce((s, t) => t.type === 'income' ? s + Number(t.amount) : (t.type === 'expense' ? s - Number(t.amount) : s), 0);
+        const rowsHtml = items.map(t => {
+          const w = db.wallets.find(x => x.id === t.walletId);
+          const toW = t.toWalletId ? db.wallets.find(x => x.id === t.toWalletId) : null;
+          const cat = db.categories.find(c => c.id === t.categoryId);
+          const isInc = t.type === 'income';
+          const isTr = t.type === 'transfer';
+          const icon = isTr ? 'swap_horiz' : (cat ? cat.icon : 'receipt');
+          const cls = isInc ? 'text-income-green' : (isTr ? 'text-muted-gold' : 'text-expense-coral');
+          const sign = isInc ? '+' : (isTr ? '⇄' : '-');
+          const title = t.note || (isTr ? `تحويل إلى ${toW ? toW.name : ''}` : (cat ? cat.name : 'عملية'));
+          const sub = isTr ? `${w ? w.name : ''} ← ${toW ? toW.name : ''}` : (w ? w.name : '');
+          return `
+            <div class="flex items-center justify-between gap-gutter-sm p-gutter-md">
+              <div class="flex items-center gap-gutter-sm min-w-0">
+                <div class="w-10 h-10 rounded-full bg-dark-surface-container-high flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined ${cls} text-title-lg" aria-hidden="true">${icon}</span>
+                </div>
+                <div class="min-w-0">
+                  <p class="font-body text-body-md font-bold text-dark-on-surface truncate">${title}</p>
+                  <p class="text-label-sm text-dark-on-surface-variant">${sub}</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-gutter-sm shrink-0">
+                <p class="font-headline text-title-md ${cls} tabular-nums" dir="ltr">${sign} ${fmt(t.amount, t.currency || 'MRU')}</p>
+                <button type="button" onclick="openTxEditModal('${t.id}')" aria-label="تعديل" class="p-1.5 rounded-full hover:bg-dark-surface-container-high text-dark-on-surface-variant hover:text-dark-on-surface">
+                  <span class="material-symbols-outlined text-body-lg">edit</span>
+                </button>
+                <button type="button" onclick="askDeleteTx('${t.id}')" aria-label="حذف" class="p-1.5 rounded-full hover:bg-dark-surface-container-high text-dark-on-surface-variant hover:text-expense-coral">
+                  <span class="material-symbols-outlined text-body-lg">delete</span>
+                </button>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        return `
+          <div class="flex flex-col gap-gutter-xs">
+            <div class="flex items-center justify-between px-gutter-xs">
+              <span class="text-label-sm text-dark-on-surface-variant">${date}</span>
+              <span class="text-label-sm ${dayNet >= 0 ? 'text-income-green' : 'text-expense-coral'} tabular-nums" dir="ltr">${dayNet >= 0 ? '+' : ''}${fmt(dayNet)}</span>
+            </div>
+            <div class="bg-card-surface border border-dark-outline-variant rounded-md divide-y divide-dark-outline-variant">${rowsHtml}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function applyEffect(tx, sign) {
+      const amt = Number(tx.amount) * sign;
+      const w = db.wallets.find(x => x.id === tx.walletId);
+      if (!w) return;
+      if (tx.type === 'expense') w.balance = Math.round((Number(w.balance) - amt) * 100) / 100;
+      else if (tx.type === 'income') w.balance = Math.round((Number(w.balance) + amt) * 100) / 100;
+      else if (tx.type === 'transfer') {
+        const toW = db.wallets.find(x => x.id === tx.toWalletId);
+        w.balance = Math.round((Number(w.balance) - amt) * 100) / 100;
+        if (toW) toW.balance = Math.round((Number(toW.balance) + amt) * 100) / 100;
+      }
+    }
+
+    function openTxEditModal(id) {
+      const wOpts = db.wallets.filter(w => !w.archived).map(w => `<option value="${w.id}">${w.name}</option>`).join('');
+      document.getElementById('txm-wallet').innerHTML = wOpts;
+      document.getElementById('txm-to-wallet').innerHTML = wOpts;
+      document.getElementById('txm-err').classList.add('hidden');
+
+      if (id) {
+        const t = db.transactions.find(x => x.id === id);
+        document.getElementById('txm-title').textContent = 'تعديل العملية';
+        document.getElementById('txm-id').value = t.id;
+        setModalType(t.type);
+        document.getElementById('txm-amount').value = t.amount;
+        document.getElementById('txm-wallet').value = t.walletId;
+        if (t.toWalletId) document.getElementById('txm-to-wallet').value = t.toWalletId;
+        if (t.categoryId) document.getElementById('txm-category').value = t.categoryId;
+        document.getElementById('txm-date').value = t.date;
+        document.getElementById('txm-note').value = t.note || '';
+      } else {
+        document.getElementById('txm-title').textContent = 'إضافة عملية جديدة';
+        document.getElementById('txm-id').value = '';
+        setModalType('expense');
+        document.getElementById('txm-amount').value = '';
+        if (db.wallets.length > 1) document.getElementById('txm-to-wallet').selectedIndex = 1;
+        document.getElementById('txm-date').value = new Date().toISOString().split('T')[0];
+        document.getElementById('txm-note').value = '';
+      }
+      document.getElementById('tx-edit-modal').showModal();
+    }
+
+    function setModalType(t) {
+      modalType = t;
+      const styles = { expense: 'bg-expense-coral text-dark-on-error', income: 'bg-emerald-primary text-on-emerald-primary', transfer: 'bg-muted-gold text-on-muted-gold' };
+      ['expense', 'income', 'transfer'].forEach(k => {
+        document.getElementById('m-tab-' + k).className = 'py-1.5 rounded-full text-label-sm ' + (k === t ? styles[k] : 'text-dark-on-surface-variant');
+      });
+      const isTr = t === 'transfer';
+      document.getElementById('txm-to-wrap').classList.toggle('hidden', !isTr);
+      document.getElementById('txm-to-wrap').classList.toggle('flex', isTr);
+      document.getElementById('txm-cat-wrap').classList.toggle('hidden', isTr);
+      document.getElementById('txm-w-label').textContent = isTr ? 'من محفظة' : 'المحفظة';
+      if (!isTr) {
+        document.getElementById('txm-category').innerHTML = db.categories.filter(c => c.type === t).map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+      }
+    }
+
+    function saveTx(e) {
+      e.preventDefault();
+      const id = document.getElementById('txm-id').value;
+      const amount = Math.round(parseFloat(document.getElementById('txm-amount').value) * 100) / 100;
+      const walletId = document.getElementById('txm-wallet').value;
+      const toWalletId = document.getElementById('txm-to-wallet').value;
+      const categoryId = document.getElementById('txm-category').value;
+      const date = document.getElementById('txm-date').value;
+      const note = document.getElementById('txm-note').value.trim();
+      const err = document.getElementById('txm-err');
+
+      if (!amount || amount <= 0) { err.textContent = 'أدخل مبلغاً صحيحاً.'; err.classList.remove('hidden'); return; }
+      if (modalType === 'transfer' && walletId === toWalletId) { err.textContent = 'لا يمكن التحويل إلى نفس المحفظة.'; err.classList.remove('hidden'); return; }
+
+      if (id) {
+        const old = db.transactions.find(x => x.id === id);
+        applyEffect(old, -1); // Reverse old effect
+        Object.assign(old, { type: modalType, amount, walletId, toWalletId: modalType === 'transfer' ? toWalletId : null, categoryId: modalType === 'transfer' ? null : categoryId, date, note });
+        applyEffect(old, 1); // Apply new effect
+      } else {
+        const w = db.wallets.find(x => x.id === walletId);
+        const tx = { id: 't_' + Date.now(), type: modalType, amount, walletId, toWalletId: modalType === 'transfer' ? toWalletId : null, categoryId: modalType === 'transfer' ? null : categoryId, date, note, currency: w ? w.currency : 'MRU' };
+        db.transactions.unshift(tx);
+        applyEffect(tx, 1);
+      }
+      saveDB(db);
+      document.getElementById('tx-edit-modal').close();
+      renderList();
+    }
+
+    function askDeleteTx(id) {
+      pendingDeleteId = id;
+      document.getElementById('delete-confirm-modal').showModal();
+    }
+
+    function confirmDeleteTx() {
+      if (!pendingDeleteId) return;
+      const idx = db.transactions.findIndex(x => x.id === pendingDeleteId);
+      if (idx !== -1) {
+        applyEffect(db.transactions[idx], -1);
+        db.transactions.splice(idx, 1);
+        saveDB(db);
+      }
+      pendingDeleteId = null;
+      document.getElementById('delete-confirm-modal').close();
+      renderList();
+    }
+
+    populateFilterSelects();
+    renderList();
+  </script>
+
+
+</body></html>

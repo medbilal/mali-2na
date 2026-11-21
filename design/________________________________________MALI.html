@@ -1,0 +1,563 @@
+<!DOCTYPE html><html lang="ar" dir="rtl" class="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المزيد — MALI – مالي</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="14546e634a2f4b9a===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'emerald-primary': '#19C37D',
+        'on-emerald-primary': '#002B17',
+        'muted-gold': '#D6B56D',
+        'on-muted-gold': '#2A1E00',
+        'charcoal-bg': '#101318',
+        'card-surface': '#1B2026',
+        'income-green': '#19C37D',
+        'expense-coral': '#F26464',
+        'warning-amber': '#E4C279',
+        'dark-primary': '#48E096',
+        'dark-on-primary': '#003920',
+        'dark-primary-container': '#19C37D',
+        'dark-on-primary-container': '#002915',
+        'dark-secondary': '#E4C279',
+        'dark-on-secondary': '#3F2E00',
+        'dark-secondary-container': '#5D4606',
+        'dark-on-secondary-container': '#FFDF9C',
+        'dark-tertiary': '#FFB5A2',
+        'dark-on-tertiary': '#601402',
+        'dark-tertiary-container': '#FF8B6E',
+        'dark-on-tertiary-container': '#420B00',
+        'dark-error': '#FFB3AF',
+        'dark-on-error': '#68000D',
+        'dark-error-container': '#910518',
+        'dark-on-error-container': '#FFDAD7',
+        'dark-background': '#101318',
+        'dark-on-background': '#E6E8EE',
+        'dark-surface': '#101318',
+        'dark-surface-dim': '#0B0E13',
+        'dark-surface-bright': '#2A3038',
+        'dark-surface-container-lowest': '#0B0E13',
+        'dark-surface-container-low': '#15191F',
+        'dark-surface-container': '#1B2026',
+        'dark-surface-container-high': '#232931',
+        'dark-surface-container-highest': '#2D343E',
+        'dark-on-surface': '#E6E8EE',
+        'dark-surface-variant': '#2D343E',
+        'dark-on-surface-variant': '#9BA3B0',
+        'dark-outline': '#7A828F',
+        'dark-outline-variant': '#2A313B',
+        'dark-inverse-surface': '#E6E8EE',
+        'dark-inverse-on-surface': '#1B2026',
+        'dark-inverse-primary': '#006D43',
+        'dark-shadow': '#000000',
+        'dark-scrim': '#000000',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '12px',
+        'md': '16px',
+        'lg': '20px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '32px',
+        'page-margin': '16px',
+      },
+      fontFamily: {
+        'display': ['"Cairo"', 'sans-serif'],
+        'headline': ['"Cairo"', 'sans-serif'],
+        'title': ['"Cairo"', 'sans-serif'],
+        'body': ['"Tajawal"', 'sans-serif'],
+        'label': ['"Tajawal"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['28px', { lineHeight: '36px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-md': ['22px', { lineHeight: '30px', letterSpacing: '0px', fontWeight: '700' }],
+        'title-lg': ['18px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '700' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '700' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '220ms',
+        'surface-exit': '160ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&amp;family=Tajawal:wght@400;500;700&amp;family=Source+Code+Pro:wght@600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-dark-surface text-dark-on-surface font-body antialiased overflow-x-hidden">
+
+  <div class="min-h-screen flex flex-col lg:flex-row">
+    <!-- Desktop RTL Sidebar -->
+    <aside class="hidden lg:flex lg:flex-col lg:w-64 lg:shrink-0 min-h-screen bg-dark-surface-container border-l border-dark-outline-variant p-gutter-lg justify-between sticky top-0">
+      <div class="flex flex-col gap-gutter-xl">
+        <div class="flex items-center gap-gutter-sm">
+          <div class="w-10 h-10 rounded-md bg-emerald-primary text-on-emerald-primary flex items-center justify-center font-headline text-title-lg">م</div>
+          <div>
+            <p class="font-headline text-title-lg text-dark-on-surface" data-design-text-token="title-lg">MALI – مالي</p>
+            <p class="text-label-sm text-dark-on-surface-variant" data-design-text-token="label-sm">إدارة المال الذكية</p>
+          </div>
+        </div>
+        <nav class="flex flex-col gap-gutter-xs" aria-label="التنقل الرئيسي">
+          <a href="../home-dashboard/HomeDashboard.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">home</span>
+            <span data-design-text-token="label-lg">الرئيسية</span>
+          </a>
+          <a href="../wallets/Wallets.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">account_balance_wallet</span>
+            <span data-design-text-token="label-lg">المحافظ</span>
+          </a>
+          <a href="../transactions/Transactions.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">receipt_long</span>
+            <span data-design-text-token="label-lg">العمليات</span>
+          </a>
+          <a href="../reports/Reports.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded text-dark-on-surface-variant hover:bg-dark-surface-container-high hover:text-dark-on-surface font-label text-label-lg transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-lg">monitoring</span>
+            <span data-design-text-token="label-lg">التقارير</span>
+          </a>
+          <a href="../more-hub/MoreHub.html" class="flex items-center gap-gutter-sm px-gutter-md py-3 rounded bg-dark-surface-container-high text-emerald-primary font-label text-label-lg">
+            <span class="material-symbols-outlined text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;">grid_view</span>
+            <span data-design-text-token="label-lg">المزيد</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 min-w-0 w-full max-w-5xl mx-auto px-page-margin lg:px-gutter-xl pt-gutter-md pb-28 lg:pb-gutter-xl flex flex-col gap-gutter-lg">
+      <header>
+        <h1 class="font-headline text-headline-lg text-dark-on-surface" data-design-text-token="headline-lg">الأدوات والإعدادات</h1>
+        <p class="text-body-md text-dark-on-surface-variant" data-design-text-token="body-md">الميزانيات، الديون، العمليات المتكررة، التصنيفات، والعملات</p>
+      </header>
+
+      <!-- Section Switcher -->
+      <div role="tablist" class="flex gap-gutter-xs overflow-x-auto no-scrollbar pb-gutter-xs">
+        <button type="button" onclick="switchSection(&#39;budgets&#39;)" id="sec-budgets" class="px-gutter-md py-2 rounded-full text-label-lg bg-emerald-primary text-on-emerald-primary shrink-0">الميزانيات</button>
+        <button type="button" onclick="switchSection(&#39;debts&#39;)" id="sec-debts" class="px-gutter-md py-2 rounded-full text-label-lg bg-card-surface border border-dark-outline-variant text-dark-on-surface-variant shrink-0">الديون</button>
+        <button type="button" onclick="switchSection(&#39;recurring&#39;)" id="sec-recurring" class="px-gutter-md py-2 rounded-full text-label-lg bg-card-surface border border-dark-outline-variant text-dark-on-surface-variant shrink-0">المتكررة</button>
+        <button type="button" onclick="switchSection(&#39;categories&#39;)" id="sec-categories" class="px-gutter-md py-2 rounded-full text-label-lg bg-card-surface border border-dark-outline-variant text-dark-on-surface-variant shrink-0">التصنيفات</button>
+        <button type="button" onclick="switchSection(&#39;settings&#39;)" id="sec-settings" class="px-gutter-md py-2 rounded-full text-label-lg bg-card-surface border border-dark-outline-variant text-dark-on-surface-variant shrink-0">الإعدادات</button>
+      </div>
+
+      <!-- 1. BUDGETS -->
+      <section id="panel-budgets" class="flex flex-col gap-gutter-md">
+        <div class="flex items-center justify-between">
+          <h2 class="font-headline text-title-lg text-dark-on-surface">الميزانيات الشهرية</h2>
+          <button type="button" onclick="addBudgetPrompt()" class="px-gutter-md py-1.5 rounded-full bg-emerald-primary text-on-emerald-primary text-label-sm">+ ميزانية</button>
+        </div>
+        <div id="budgets-list" class="grid grid-cols-1 md:grid-cols-2 gap-gutter-md"></div>
+      </section>
+
+      <!-- 2. DEBTS -->
+      <section id="panel-debts" class="hidden flex-col gap-gutter-md">
+        <div class="flex items-center justify-between">
+          <h2 class="font-headline text-title-lg text-dark-on-surface">إدارة الديون</h2>
+          <button type="button" onclick="openDebtModal()" class="px-gutter-md py-1.5 rounded-full bg-emerald-primary text-on-emerald-primary text-label-sm">+ سجل دين</button>
+        </div>
+        <div class="flex flex-col gap-gutter-sm">
+          <h3 class="font-headline text-title-md text-income-green">أموال لي عند الآخرين</h3>
+          <div id="debts-owed-to-me" class="flex flex-col gap-gutter-sm"></div>
+        </div>
+        <div class="flex flex-col gap-gutter-sm">
+          <h3 class="font-headline text-title-md text-expense-coral">أموال عليّ للآخرين</h3>
+          <div id="debts-i-owe" class="flex flex-col gap-gutter-sm"></div>
+        </div>
+      </section>
+
+      <!-- 3. RECURRING -->
+      <section id="panel-recurring" class="hidden flex-col gap-gutter-md">
+        <div class="flex items-center justify-between">
+          <h2 class="font-headline text-title-lg text-dark-on-surface">المعاملات المتكررة</h2>
+          <button type="button" onclick="addRecurringSample()" class="px-gutter-md py-1.5 rounded-full bg-emerald-primary text-on-emerald-primary text-label-sm">+ تكرار</button>
+        </div>
+        <div id="recurring-list" class="flex flex-col gap-gutter-sm"></div>
+      </section>
+
+      <!-- 4. CATEGORIES -->
+      <section id="panel-categories" class="hidden flex-col gap-gutter-md">
+        <div class="flex items-center justify-between">
+          <h2 class="font-headline text-title-lg text-dark-on-surface">إدارة التصنيفات</h2>
+          <button type="button" onclick="openCategoryModal()" class="px-gutter-md py-1.5 rounded-full bg-emerald-primary text-on-emerald-primary text-label-sm">+ تصنيف</button>
+        </div>
+        <div id="categories-list" class="grid grid-cols-2 md:grid-cols-3 gap-gutter-sm"></div>
+      </section>
+
+      <!-- 5. SETTINGS -->
+      <section id="panel-settings" class="hidden flex-col gap-gutter-md">
+        <div class="bg-card-surface border border-dark-outline-variant rounded-md divide-y divide-dark-outline-variant">
+          <div class="p-gutter-md flex items-center justify-between">
+            <div>
+              <p class="font-bold text-body-md">اللغة الأساسية</p>
+              <p class="text-label-sm text-dark-on-surface-variant">العربية (RTL) — دعم الفرنسية والإنجليزية قريباً</p>
+            </div>
+            <select id="set-lang" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-sm py-1.5 text-label-sm">
+              <option value="ar">العربية</option>
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+
+          <div class="p-gutter-md flex items-center justify-between">
+            <div>
+              <p class="font-bold text-body-md">العملة الأساسية</p>
+              <p class="text-label-sm text-dark-on-surface-variant">الأوقية الموريتانية (MRU)</p>
+            </div>
+            <select id="set-currency" onchange="updateCurrencySettings()" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-sm py-1.5 text-label-sm">
+              <option value="MRU">MRU</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="MAD">MAD</option>
+              <option value="XOF">XOF</option>
+            </select>
+          </div>
+
+          <div class="p-gutter-md flex items-center justify-between">
+            <div>
+              <p class="font-bold text-body-md">تحويل العملات التلقائي</p>
+              <p class="text-label-sm text-dark-on-surface-variant">دمج أرصدة العملات الأجنبية في الإجمالي</p>
+            </div>
+            <input id="set-conv" type="checkbox" onchange="updateCurrencySettings()" class="w-5 h-5 rounded bg-dark-surface-container-low border-dark-outline-variant text-emerald-primary focus:ring-emerald-primary">
+          </div>
+
+          <div class="p-gutter-md flex items-center justify-between">
+            <div>
+              <p class="font-bold text-body-md">قفل التطبيق (PIN / البصمة)</p>
+              <p class="text-label-sm text-dark-on-surface-variant">حماية الخصوصية عند فتح التطبيق</p>
+            </div>
+            <input id="set-pin" type="checkbox" class="w-5 h-5 rounded bg-dark-surface-container-low border-dark-outline-variant text-emerald-primary focus:ring-emerald-primary">
+          </div>
+
+          <div class="p-gutter-md flex items-center justify-between">
+            <div>
+              <p class="font-bold text-body-md">الإشعارات والتنبيهات</p>
+              <p class="text-label-sm text-dark-on-surface-variant">تنبيهات الميزانية والديون المستحقة</p>
+            </div>
+            <input type="checkbox" checked class="w-5 h-5 rounded bg-dark-surface-container-low border-dark-outline-variant text-emerald-primary focus:ring-emerald-primary">
+          </div>
+        </div>
+
+        <!-- Backup & Demo Data -->
+        <div class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-md flex flex-col gap-gutter-sm">
+          <h3 class="font-headline text-title-md text-dark-on-surface">البيانات والنسخ الاحتياطي</h3>
+          <div class="flex flex-wrap gap-gutter-sm">
+            <button type="button" onclick="clearDemoData()" class="px-gutter-md py-2 rounded-full bg-dark-error-container text-dark-on-error-container text-label-sm">حذف البيانات التجريبية</button>
+            <button type="button" onclick="restoreDemoData()" class="px-gutter-md py-2 rounded-full bg-dark-surface-container-high text-dark-on-surface text-label-sm">استعادة البيانات التجريبية</button>
+          </div>
+          <p id="settings-status" class="hidden text-label-sm text-income-green"></p>
+        </div>
+
+        <div class="text-center text-label-sm text-dark-on-surface-variant py-gutter-sm">
+          MALI – مالي • الإصدار 1.0 • جميع البيانات محفوظة محلياً بأمان
+        </div>
+      </section>
+    </main>
+
+    <!-- Mobile Bottom Navigation + FAB -->
+    <nav aria-label="التنقل السفلي" class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-card-surface border-t border-dark-outline-variant px-gutter-sm py-gutter-xs">
+      <div class="max-w-md mx-auto grid grid-cols-5 items-center relative">
+        <a href="../home-dashboard/HomeDashboard.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">home</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">الرئيسية</span>
+        </a>
+        <a href="../wallets/Wallets.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">account_balance_wallet</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">المحافظ</span>
+        </a>
+        <div class="flex items-center justify-center">
+          <a href="../home-dashboard/HomeDashboard.html" aria-label="إضافة عملية" class="-mt-7 w-14 h-14 rounded-full bg-emerald-primary text-on-emerald-primary flex items-center justify-center border-4 border-dark-surface hover:bg-dark-primary">
+            <span class="material-symbols-outlined text-headline-lg">add</span>
+          </a>
+        </div>
+        <a href="../transactions/Transactions.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-dark-on-surface-variant hover:text-dark-on-surface">
+          <span class="material-symbols-outlined text-headline-md">receipt_long</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">العمليات</span>
+        </a>
+        <a href="../more-hub/MoreHub.html" class="flex flex-col items-center justify-center gap-0.5 py-1.5 text-emerald-primary">
+          <span class="material-symbols-outlined text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;">grid_view</span>
+          <span class="text-label-sm" data-design-text-token="label-sm">المزيد</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Debt Modal -->
+  <dialog id="debt-modal" class="bg-card-surface text-dark-on-surface border border-dark-outline-variant rounded-xl p-gutter-lg w-full max-w-md backdrop:bg-dark-scrim/80">
+    <header class="flex items-center justify-between pb-gutter-md border-b border-dark-outline-variant">
+      <h2 class="font-headline text-title-lg">إضافة سجل دين</h2>
+      <button type="button" onclick="document.getElementById(&#39;debt-modal&#39;).close()" aria-label="إغلاق" class="w-9 h-9 rounded-full inline-flex items-center justify-center bg-dark-surface-container-high">
+        <span class="material-symbols-outlined text-title-lg">close</span>
+      </button>
+    </header>
+    <form onsubmit="saveDebt(event)" class="py-gutter-md flex flex-col gap-gutter-md">
+      <select id="d-dir" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md">
+        <option value="owed_to_me">أموال لي عند الآخرين</option>
+        <option value="i_owe">أموال عليّ للآخرين</option>
+      </select>
+      <input id="d-person" type="text" required placeholder="اسم الشخص أو الجهة" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md">
+      <input id="d-amount" type="number" min="1" required placeholder="المبلغ (MRU)" dir="ltr" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md tabular-nums">
+      <input id="d-due" type="date" required class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md">
+      <button type="submit" class="w-full py-3 rounded-full bg-emerald-primary text-on-emerald-primary font-label text-label-lg">حفظ الدين</button>
+    </form>
+  </dialog>
+
+  <!-- Category Modal -->
+  <dialog id="cat-modal" class="bg-card-surface text-dark-on-surface border border-dark-outline-variant rounded-xl p-gutter-lg w-full max-w-sm backdrop:bg-dark-scrim/80">
+    <header class="flex items-center justify-between pb-gutter-md border-b border-dark-outline-variant">
+      <h2 class="font-headline text-title-lg">إضافة تصنيف</h2>
+      <button type="button" onclick="document.getElementById(&#39;cat-modal&#39;).close()" aria-label="إغلاق" class="w-9 h-9 rounded-full inline-flex items-center justify-center bg-dark-surface-container-high">
+        <span class="material-symbols-outlined text-title-lg">close</span>
+      </button>
+    </header>
+    <form onsubmit="saveCategory(event)" class="py-gutter-md flex flex-col gap-gutter-md">
+      <input id="c-name" type="text" required placeholder="اسم التصنيف" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md">
+      <select id="c-type" class="bg-dark-surface-container-low border border-dark-outline-variant rounded px-gutter-md py-2.5 text-body-md">
+        <option value="expense">مصروف</option>
+        <option value="income">دخل</option>
+      </select>
+      <button type="submit" class="w-full py-3 rounded-full bg-emerald-primary text-on-emerald-primary font-label text-label-lg">حفظ التصنيف</button>
+    </form>
+  </dialog>
+
+  <script>
+    const DB_KEY = 'mali_finance_db_v1';
+    let memFallback = null;
+    function loadDB() {
+      try { const r = localStorage.getItem(DB_KEY); if (r) return JSON.parse(r); } catch (e) {}
+      if (!memFallback) memFallback = {
+        isDemo: true, primaryCurrency: 'MRU', currencyConversion: false,
+        wallets: [{ id: 'w_cash', name: 'النقدي', balance: 120000, currency: 'MRU' }],
+        categories: [
+          { id: 'c_food', name: 'طعام ومطاعم', type: 'expense', icon: 'restaurant' },
+          { id: 'c_trans', name: 'نقل ومواصلات', type: 'expense', icon: 'directions_car' },
+          { id: 'c_bills', name: 'فواتير', type: 'expense', icon: 'receipt' },
+          { id: 'c_salary', name: 'راتب', type: 'income', icon: 'payments' }
+        ],
+        transactions: [
+          { id: 't_2', type: 'expense', amount: 14500, walletId: 'w_cash', categoryId: 'c_food', date: '2026-11-20', currency: 'MRU' },
+          { id: 't_4', type: 'expense', amount: 8500, walletId: 'w_cash', categoryId: 'c_bills', date: '2026-11-18', currency: 'MRU' }
+        ],
+        budgets: [
+          { id: 'b_1', categoryId: 'c_food', limit: 45000 },
+          { id: 'b_3', categoryId: 'c_bills', limit: 10000 }
+        ],
+        debts: [
+          { id: 'd_1', direction: 'owed_to_me', person: 'أحمد ولد سيدي', amount: 30000, paid: 10000, dueDate: '2026-12-01', walletId: 'w_cash' },
+          { id: 'd_2', direction: 'i_owe', person: 'مكتبة المعرفة', amount: 12000, paid: 4000, dueDate: '2026-11-26', walletId: 'w_cash' }
+        ],
+        recurring: [
+          { id: 'r_1', title: 'إيجار الشقة', type: 'expense', amount: 65000, frequency: 'monthly', nextDate: '2026-12-01', active: true },
+          { id: 'r_2', title: 'الراتب الشهري', type: 'income', amount: 280000, frequency: 'monthly', nextDate: '2026-12-20', active: true }
+        ]
+      };
+      return memFallback;
+    }
+    function saveDB(d) { memFallback = d; try { localStorage.setItem(DB_KEY, JSON.stringify(d)); } catch (e) {} }
+    let db = loadDB();
+
+    function fmt(a, c = 'MRU') { return (Math.round(Number(a) * 100) / 100).toLocaleString('en-US', { maximumFractionDigits: 2 }) + ' ' + c; }
+
+    function switchSection(sec) {
+      ['budgets', 'debts', 'recurring', 'categories', 'settings'].forEach(s => {
+        document.getElementById('sec-' + s).className = 'px-gutter-md py-2 rounded-full text-label-lg shrink-0 ' + (s === sec ? 'bg-emerald-primary text-on-emerald-primary' : 'bg-card-surface border border-dark-outline-variant text-dark-on-surface-variant');
+        const p = document.getElementById('panel-' + s);
+        p.classList.toggle('hidden', s !== sec);
+        p.classList.toggle('flex', s === sec);
+      });
+      renderAll();
+    }
+
+    function renderAll() {
+      db = loadDB();
+      // Budgets
+      const bList = document.getElementById('budgets-list');
+      bList.innerHTML = (db.budgets || []).map(b => {
+        const cat = db.categories.find(c => c.id === b.categoryId);
+        const spent = db.transactions.filter(t => t.type === 'expense' && t.categoryId === b.categoryId).reduce((s, t) => s + Number(t.amount), 0);
+        const pct = Math.min(100, Math.round((spent / b.limit) * 100));
+        const rem = b.limit - spent;
+        const statusCls = pct >= 100 ? 'bg-expense-coral' : (pct >= 80 ? 'bg-warning-amber' : 'bg-emerald-primary');
+        const statusTxt = pct >= 100 ? 'تجاوز الميزانية' : (pct >= 80 ? 'اقترب من الحد (80%+)' : 'ضمن الحد');
+        return `
+          <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-md flex flex-col gap-gutter-sm">
+            <div class="flex items-center justify-between">
+              <span class="font-headline text-title-md text-dark-on-surface">${cat ? cat.name : 'تصنيف'}</span>
+              <span class="text-label-sm ${pct >= 100 ? 'text-expense-coral' : (pct >= 80 ? 'text-warning-amber' : 'text-income-green')}">${statusTxt} (${pct}%)</span>
+            </div>
+            <div class="w-full h-2.5 rounded-full bg-dark-surface-container-low overflow-hidden">
+              <div style="width:${pct}%" class="h-full rounded-full ${statusCls}"></div>
+            </div>
+            <div class="flex justify-between text-label-sm text-dark-on-surface-variant tabular-nums">
+              <span dir="ltr">المصروف: ${fmt(spent)}</span>
+              <span dir="ltr">المتبقي: ${fmt(rem)}</span>
+            </div>
+          </article>
+        `;
+      }).join('') || '<p class="text-body-md text-dark-on-surface-variant">لا توجد ميزانيات محددة.</p>';
+
+      // Debts
+      const renderDebtCard = d => {
+        const rem = Math.max(0, Number(d.amount) - Number(d.paid));
+        const done = rem === 0;
+        return `
+          <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-md flex items-center justify-between gap-gutter-sm">
+            <div>
+              <p class="font-headline text-title-md text-dark-on-surface">${d.person}</p>
+              <p class="text-label-sm text-dark-on-surface-variant">المتبقي: <span dir="ltr" class="tabular-nums font-bold">${fmt(rem)}</span> من ${fmt(d.amount)} • الاستحقاق: ${d.dueDate}</p>
+            </div>
+            ${done ? `<span class="px-gutter-sm py-1 rounded-full bg-dark-surface-container-high text-income-green text-label-sm">مسدد</span>`
+            : `<button type="button" onclick="payDebt('${d.id}', 5000)" class="px-gutter-md py-1.5 rounded-full bg-dark-surface-container-high border border-dark-outline-variant text-label-sm text-emerald-primary hover:bg-dark-surface-bright">دفعة 5,000</button>`}
+          </article>
+        `;
+      };
+      document.getElementById('debts-owed-to-me').innerHTML = (db.debts || []).filter(d => d.direction === 'owed_to_me').map(renderDebtCard).join('') || '<p class="text-label-sm text-dark-on-surface-variant">لا توجد سجلات</p>';
+      document.getElementById('debts-i-owe').innerHTML = (db.debts || []).filter(d => d.direction === 'i_owe').map(renderDebtCard).join('') || '<p class="text-label-sm text-dark-on-surface-variant">لا توجد سجلات</p>';
+
+      // Recurring
+      const freqAr = { daily: 'يومي', weekly: 'أسبوعي', monthly: 'شهري', yearly: 'سنوي' };
+      document.getElementById('recurring-list').innerHTML = (db.recurring || []).map(r => `
+        <article class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-md flex items-center justify-between">
+          <div>
+            <p class="font-headline text-title-md text-dark-on-surface">${r.title}</p>
+            <p class="text-label-sm text-dark-on-surface-variant">${freqAr[r.frequency] || 'شهري'} • القادم: ${r.nextDate}</p>
+          </div>
+          <div class="flex items-center gap-gutter-sm">
+            <span class="font-headline text-title-md ${r.type === 'income' ? 'text-income-green' : 'text-expense-coral'} tabular-nums" dir="ltr">${fmt(r.amount)}</span>
+            <button type="button" onclick="toggleRec('${r.id}')" class="px-gutter-sm py-1 rounded-full bg-dark-surface-container-high text-label-sm">${r.active ? 'إيقاف' : 'تفعيل'}</button>
+          </div>
+        </article>
+      `).join('');
+
+      // Categories
+      document.getElementById('categories-list').innerHTML = (db.categories || []).map(c => `
+        <div class="bg-card-surface border border-dark-outline-variant rounded-md p-gutter-sm flex items-center justify-between gap-2">
+          <div class="flex items-center gap-2 min-w-0">
+            <span class="material-symbols-outlined text-emerald-primary text-title-lg">${c.icon || 'category'}</span>
+            <span class="text-body-md truncate">${c.name}</span>
+          </div>
+          <span class="text-label-sm text-dark-on-surface-variant">${c.type === 'income' ? 'دخل' : 'مصروف'}</span>
+        </div>
+      `).join('');
+
+      document.getElementById('set-currency').value = db.primaryCurrency || 'MRU';
+      document.getElementById('set-conv').checked = !!db.currencyConversion;
+    }
+
+    function payDebt(id, amt) {
+      const d = db.debts.find(x => x.id === id);
+      if (!d) return;
+      const rem = Number(d.amount) - Number(d.paid);
+      const pay = Math.min(rem, amt);
+      d.paid = Number(d.paid) + pay;
+      saveDB(db);
+      renderAll();
+    }
+
+    function openDebtModal() { document.getElementById('debt-modal').showModal(); }
+    function saveDebt(e) {
+      e.preventDefault();
+      db.debts.push({
+        id: 'd_' + Date.now(),
+        direction: document.getElementById('d-dir').value,
+        person: document.getElementById('d-person').value.trim(),
+        amount: parseFloat(document.getElementById('d-amount').value),
+        paid: 0,
+        dueDate: document.getElementById('d-due').value
+      });
+      saveDB(db);
+      document.getElementById('debt-modal').close();
+      renderAll();
+    }
+
+    function toggleRec(id) {
+      const r = db.recurring.find(x => x.id === id);
+      if (r) { r.active = !r.active; saveDB(db); renderAll(); }
+    }
+
+    function addBudgetPrompt() {
+      const expCat = db.categories.find(c => c.type === 'expense');
+      if (expCat) { db.budgets.push({ id: 'b_' + Date.now(), categoryId: expCat.id, limit: 25000 }); saveDB(db); renderAll(); }
+    }
+
+    function addRecurringSample() {
+      db.recurring.push({ id: 'r_' + Date.now(), title: 'اشتراك الإنترنت', type: 'expense', amount: 3500, frequency: 'monthly', nextDate: '2026-12-05', active: true });
+      saveDB(db); renderAll();
+    }
+
+    function openCategoryModal() { document.getElementById('cat-modal').showModal(); }
+    function saveCategory(e) {
+      e.preventDefault();
+      db.categories.push({ id: 'c_' + Date.now(), name: document.getElementById('c-name').value.trim(), type: document.getElementById('c-type').value, icon: 'label' });
+      saveDB(db); document.getElementById('cat-modal').close(); renderAll();
+    }
+
+    function updateCurrencySettings() {
+      db.primaryCurrency = document.getElementById('set-currency').value;
+      db.currencyConversion = document.getElementById('set-conv').checked;
+      saveDB(db);
+    }
+
+    function clearDemoData() {
+      db.isDemo = false; db.transactions = []; db.budgets = []; db.debts = []; db.recurring = [];
+      db.wallets = [{ id: 'w_cash', name: 'النقدي', type: 'cash', balance: 0, currency: db.primaryCurrency, icon: 'payments', archived: false }];
+      saveDB(db);
+      const st = document.getElementById('settings-status');
+      st.textContent = 'تم حذف جميع البيانات التجريبية بنجاح.';
+      st.classList.remove('hidden');
+      renderAll();
+    }
+
+    function restoreDemoData() {
+      try { localStorage.removeItem(DB_KEY); } catch (e) {}
+      memFallback = null;
+      const st = document.getElementById('settings-status');
+      st.textContent = 'تمت استعادة البيانات التجريبية.';
+      st.classList.remove('hidden');
+      renderAll();
+    }
+
+    if (window.location.hash === '#settings') switchSection('settings');
+    else renderAll();
+  </script>
+
+
+</body></html>

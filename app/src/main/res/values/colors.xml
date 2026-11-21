@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="charcoal_bg">#FF101318</color>
+    <color name="card_surface">#FF1B2026</color>
+    <color name="emerald_primary">#FF19C37D</color>
+    <color name="muted_gold">#FFD6B56D</color>
+</resources>

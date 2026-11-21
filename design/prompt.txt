@@ -1,0 +1,328 @@
+Build a Premium Personal Finance & Multi-Wallet App
+Build a complete, production-quality personal finance management application called MALI – مالي.
+The app is a personal money tracker, digital wallet manager, and accounting dashboard. It allows users to manage multiple cash wallets and bank accounts, track income and expenses, transfer money between accounts, monitor balances, and analyze their financial activity.
+The app must be fully functional, not just a visual prototype.
+1. Design direction
+Create a premium fintech interface inspired by modern banking and financial apps such as Revolut, Wise, and Monzo, but with its own unique visual identity.
+Style
+- Premium, minimalist, elegant.
+- Dark theme by default.
+- Deep charcoal background: "#101318"
+- Card background: "#1B2026"
+- Primary accent: emerald green "#19C37D"
+- Secondary accent: muted gold "#D6B56D"
+- Text: white and soft gray.
+- Rounded cards, subtle borders, elegant shadows.
+- Smooth micro-interactions.
+- High-quality charts and typography.
+- No clutter, no unnecessary gradients, no excessive decorations.
+Arabic support
+- Arabic as the primary language.
+- Full RTL support.
+- Correct Arabic font rendering.
+- Numbers and financial values must be readable.
+- Support French and English in the future.
+- Mobile-first design.
+2. Main navigation
+For mobile, create a bottom navigation bar with:
+- الرئيسية
+- المحافظ
+- العمليات
+- التقارير
+- المزيد
+Include a prominent floating action button (+) to add a transaction.
+For desktop, use a sidebar navigation layout.
+3. Home dashboard
+Design a beautiful financial dashboard.
+Top section
+- Greeting: "مرحبًا بك"
+- Current date.
+- Notifications icon.
+- Profile/settings icon.
+Main balance card
+Display:
+"إجمالي رصيدك"
+Show total balance across all wallets in the primary currency.
+Include:
+- Hide/show balance toggle.
+- Small balance trend indicator.
+- Monthly change.
+- A subtle elegant visual treatment.
+Financial summary
+Create 3 compact cards:
+- الدخل هذا الشهر
+- المصروفات هذا الشهر
+- صافي التدفق
+Use green for income, red/coral for expenses, and neutral colors for balance.
+Wallet overview
+Show horizontally scrollable wallet cards.
+Each card should contain:
+- Wallet name.
+- Bank or wallet icon.
+- Current balance.
+- Currency.
+- Account type.
+Example:
+- النقدي
+- البنك الشعبي
+- BMCI
+- BNM
+Add a button: "إضافة محفظة".
+Recent transactions
+Display the latest 5 transactions with:
+- Category icon.
+- Transaction title.
+- Wallet name.
+- Date.
+- Amount.
+- Income/expense indicator.
+Button: "عرض جميع العمليات".
+Financial chart
+Create an interactive chart showing income vs expenses.
+Allow switching between:
+- أسبوع
+- شهر
+- سنة
+4. Wallet management
+Create a dedicated wallets screen.
+Users can create unlimited wallets and accounts.
+Wallet types
+- Cash.
+- Bank account.
+- Mobile money.
+- Savings wallet.
+- Custom wallet.
+Wallet creation form
+- Wallet name.
+- Wallet type.
+- Opening balance.
+- Currency.
+- Icon.
+- Color.
+- Optional description.
+Wallet details screen
+When opening a wallet, display:
+- Wallet name and type.
+- Current balance.
+- Total income.
+- Total expenses.
+- Transaction history.
+- Monthly chart.
+- Edit wallet.
+- Archive wallet.
+- Reconcile balance.
+Users must be able to independently track each account.
+5. Add transaction flow
+Make this the fastest and most intuitive feature in the application.
+When the user taps (+), open a beautifully designed transaction entry screen or bottom sheet.
+At the top, provide three tabs:
+- مصروف
+- دخل
+- تحويل
+Expense form
+- Amount input with large typography.
+- Wallet selector.
+- Category selector.
+- Date selector.
+- Optional note.
+- Optional attachment.
+- Save button.
+Income form
+- Amount.
+- Destination wallet.
+- Income category.
+- Date.
+- Note.
+- Save button.
+Transfer form
+- From wallet.
+- To wallet.
+- Amount.
+- Date.
+- Note.
+Automatically update wallet balances after saving.
+Prevent transferring money to the same wallet.
+Transfers must not count as income or expenses.
+6. Transactions screen
+Build a comprehensive transactions history page.
+Features
+- Search.
+- Filter by income, expense, or transfer.
+- Filter by wallet.
+- Filter by category.
+- Filter by date.
+- Sort newest/oldest.
+- Group transactions by day.
+- Daily totals.
+- Edit transactions.
+- Delete transactions with confirmation.
+Transaction list design
+Each row must show:
+- Category icon.
+- Transaction description.
+- Wallet.
+- Date.
+- Amount.
+Use a clear color coding system.
+7. Categories
+Create default categories with elegant icons.
+Expenses
+Food, shopping, transport, bills, rent, health, entertainment, travel, education, business, gifts, other.
+Income
+Salary, business, freelance, investment, gifts, refunds, other.
+Allow users to:
+- Create categories.
+- Edit categories.
+- Delete categories.
+- Choose category icon.
+- Choose category color.
+8. Transfers
+Create a complete internal transfer system.
+Example:
+Transfer 20,000 MRU from Cash to BMCI.
+The system must:
+- Deduct from the source wallet.
+- Add to the destination wallet.
+- Link both sides of the transaction.
+- Preserve transfer history.
+- Never classify transfers as income or expenses.
+- Support editing and reversing transfers correctly.
+9. Analytics and reports
+Create an analytics page with a premium visualization experience.
+Period selector
+- Today.
+- This week.
+- This month.
+- This year.
+- Custom date range.
+Statistics
+- Total income.
+- Total expenses.
+- Net cash flow.
+- Average daily spending.
+- Highest spending category.
+Charts
+- Income vs expenses line chart.
+- Expense categories donut chart.
+- Monthly spending bar chart.
+- Wallet balance comparison chart.
+Insights
+Generate useful financial insights, such as:
+- "Your expenses increased by 12% compared to last month."
+- "Your highest spending category is transportation."
+- "You spent less this week than last week."
+Insights must be calculated from real user data, not fabricated.
+10. Budgets
+Create a monthly budget system.
+Users can set spending limits for each category.
+Display:
+- Budget amount.
+- Amount spent.
+- Remaining amount.
+- Percentage used.
+- Progress bar.
+Alert states:
+- Normal.
+- 80% consumed.
+- Budget exceeded.
+11. Debts
+Create a debt management page.
+Two sections:
+- أموال لي عند الآخرين.
+- أموال عليّ للآخرين.
+Each record:
+- Person name.
+- Amount.
+- Paid amount.
+- Remaining amount.
+- Due date.
+- Wallet.
+- Notes.
+- Status.
+Allow partial payments and update the remaining debt automatically.
+12. Recurring transactions
+Allow recurring financial records:
+- Daily.
+- Weekly.
+- Monthly.
+- Yearly.
+Examples:
+- Rent.
+- Salary.
+- Subscriptions.
+- Utility bills.
+Show upcoming recurring transactions and allow editing or stopping them.
+13. Currency support
+Primary currency: Mauritanian Ouguiya (MRU).
+Use consistent formatting, for example:
+250,000 MRU
+Support additional currencies such as:
+- MRU.
+- USD.
+- EUR.
+- MAD.
+- XOF.
+Allow wallets to have different currencies.
+Never combine balances from different currencies into one total unless a conversion rate is available.
+When currency conversion is enabled:
+- Store the exchange rate used for each transaction.
+- Display the original currency.
+- Display converted value.
+- Allow manual exchange rates.
+14. Settings
+Create a polished settings screen with:
+- Language.
+- Currency.
+- Theme.
+- Notifications.
+- Privacy.
+- PIN lock.
+- Biometric lock if supported.
+- Export data.
+- Backup and restore.
+- Manage categories.
+- Manage wallets.
+- About the app.
+15. Data and functionality
+Use a persistent database.
+Implement proper financial data structures for:
+- Wallets.
+- Transactions.
+- Categories.
+- Budgets.
+- Debts.
+- Recurring transactions.
+- Currency rates.
+Financial integrity
+- Every transaction must update balances correctly.
+- Editing a transaction must reverse the old effect before applying the new effect.
+- Deleting a transaction must reverse its balance impact.
+- Transfers must update both wallets atomically.
+- Prevent invalid negative transfers.
+- Use decimal-safe financial calculations.
+- Store timestamps accurately.
+- Never lose user data after refresh or app restart.
+16. UX requirements
+- Transaction entry must require as few taps as possible.
+- Provide quick amount entry.
+- Make wallet selection intuitive.
+- Use clear empty states.
+- Add confirmation for destructive actions.
+- Use smooth page transitions.
+- Support mobile and desktop.
+- Maintain consistent spacing and component styles.
+- Avoid overcrowded screens.
+17. Seed data
+Provide sample data only during demo mode.
+Create example wallets:
+- Cash – 120,000 MRU.
+- BMCI – 350,000 MRU.
+- Banque Populaire – 80,000 MRU.
+Create sample transactions and charts to make the dashboard visually complete.
+Clearly allow the user to remove all sample data.
+18. Final requirement
+Build the entire application with working navigation, real forms, persistent data, correct financial calculations, interactive charts, and polished UI.
+Do not stop at the dashboard.
+Implement all pages, interactions, wallet management, transactions, transfers, budgets, debts, reports, and settings.
+The result should feel like a real premium personal finance application that someone could use every day to manage their money.
+Prioritize correctness, usability, elegance, speed, and privacy. You can hotlink images from the html
